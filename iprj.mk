@@ -33,7 +33,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.sh:root/init.qcom.sh \
     $(LOCAL_PATH)/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     $(LOCAL_PATH)/prebuilt/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
-    $(LOCAL_PATH)/prebuilt/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh
+    $(LOCAL_PATH)/prebuilt/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
+    $(LOCAL_PATH)/prebuilt/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
 ## Configs
 PRODUCT_COPY_FILES += \
@@ -100,7 +101,8 @@ PRODUCT_PACKAGES += \
     libOmxCore
 
 PRODUCT_PACKAGES += \
-    hwaddrs
+    hwaddrs \
+    brcm_patchram_plus
 
 PRODUCT_PACKAGES += \
     NitroParts \

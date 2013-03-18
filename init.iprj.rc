@@ -5,7 +5,7 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
-# yennie.kang for AMI306
+    insmod /system/lib/modules/bthid.ko
     chown compass system /dev/k3g_misc
     chmod 0660 /dev/k3g_misc
     chown compass system /dev/k3dh_acc_misc
@@ -138,6 +138,12 @@ service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p10 /dev/block/mmc
     class core
     user root
 
+service btld /system/bin/logwrapper /system/bin/btld -pf /system/etc/firmware/BCM4330B1_002.001.003.0243.0308.hcd -hb 4000000  -lpm 1
+    user root
+    group bluetooth net_bt_admin
+    disabled
+    oneshot 
+
 service qmiproxy /system/bin/qmiproxy
     class main
     user radio
@@ -250,6 +256,12 @@ service wpa_supplicant /system/bin/wpa_supplicant \
         #   group wifi inet keystore
         class main
     socket wpa_wlan0 dgram 660 wifi wifi
+    disabled
+    oneshot
+
+service hciattach /system/bin/init.qcom.bt.sh
+    class main
+    group bluetooth net_bt_admin
     disabled
     oneshot
 
