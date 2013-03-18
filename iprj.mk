@@ -120,6 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     mobiledata.interfaces=rmnet_sdio0,rmnet_sdio1 \
     rild.libpath=/system/lib/libril-qc-qmi-1.so \
+    ro.vendor.extension_library=/system/lib/libqc-opt.so \
     DEVICE_PROVISIONED=1 \
     ro.telephony.ril_class=LGEQualcommUiccRIL \
     ro.telephony.ril.v3=qcomuiccstack \
