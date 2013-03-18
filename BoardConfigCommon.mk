@@ -11,6 +11,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_SMP := true
+TARGET_ARCH_VARIANT_CPU := cortex-a8
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
