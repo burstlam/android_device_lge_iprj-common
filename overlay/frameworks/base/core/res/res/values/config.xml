@@ -192,4 +192,8 @@
 		<item>10</item> 
   </integer-array>
 
+  <bool name="config_enableWifiDisplay">true</bool>
+
+  <integer name="config_multiuserMaximumUsers">3</integer>
+
 </resources>
