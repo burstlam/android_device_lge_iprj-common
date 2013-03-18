@@ -83,6 +83,26 @@ on boot
 
     # original perms
     symlink /dev/graphics/fb1 /dev/graphics/hdmi
+    symlink /dev/graphics/fb1 /dev/graphics/fb2
+    chmod 0664 /sys/devices/virtual/graphics/fb1/hpd
+    chmod 0664 /sys/devices/virtual/graphics/fb1/video_mode
+    chmod 0664 /sys/devices/virtual/graphics/fb1/format_3d
+    chown system system /sys/devices/virtual/graphics/fb1/format_3d
+    chown system graphics /sys/class/graphics/fb1/connected
+    chown system graphics /sys/class/graphics/fb1/edid_modes
+    chown system graphics /sys/class/graphics/fb1/hpd
+    chown system graphics /sys/class/graphics/fb1/hdcp_present
+    chown system graphics /sys/class/graphics/fb1/hdmi_mode
+    write /proc/sys/net/ipv6/conf/rmnet_sdio0/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio1/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio2/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio3/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio4/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio5/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio6/accept_ra 2
+    write /proc/sys/net/ipv6/conf/rmnet_sdio7/accept_ra 2
+    chown system system /sys/devices/platform/msm_fb.524801/msm_fb_lcd_onoff
+    chmod 0644 /sys/devices/platform/msm_fb.524801/msm_fb_lcd_onoff
 
 on early-init
     mkdir /storage 0050 system sdcard_r
@@ -94,7 +114,6 @@ on early-init
     # Support legacy paths
     symlink /storage/sdcard /sdcard
     symlink /storage/sdcard /mnt/sdcard
-    symlink /storage/sdcard /storage/sdcard0
 
 on init
 # Backward compatibility
@@ -108,14 +127,14 @@ on fs
     mkdir /persist 0771 system system
     mkdir /mpt 0771 system system
     wait /dev/block/mmcblk0p31
-   mkdir /tombstones 0771 system system
+    mkdir /tombstones 0771 system system
 
    mkdir /tombstones/modem 0771 system system
    mkdir /tombstones/mdm 0771 system system
    mkdir /tombstones/lpass 0771 system system
    mkdir /firmware 0771 system system
    wait /dev/block/mmcblk0p1
-    mount_all ./fstab.iprj
+   mount_all ./fstab.iprj
    exec /system/bin/sh /system/etc/init.qcom.modem_links.sh
 
 
@@ -173,7 +192,7 @@ service qmiproxy /system/bin/qmiproxy
 service qmuxd /system/bin/qmuxd
     class main
     user radio
-    group radio
+    group radio audio bluetooth
     disabled
 
 service qrngd /system/bin/qrngd -f
@@ -210,6 +229,7 @@ on property:ro.baseband=csfb
     wait /dev/ttyHSL1
     mkdir /data/qcks 0770 system system
     exec /system/bin/sh /system/etc/init.qcom.mdm_links.sh
+    write /sys/module/subsystem_restart/parameters/restart_level 2
     start kickstart
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
@@ -228,6 +248,9 @@ service time_daemon /system/bin/time_daemon
     group system qcom_oncrpc
     oneshot
     disabled
+
+on property:persist.timed.enable=true
+    start time_daemon
 
 #on property:dev.bootcomplete=1
 #    mkdir /data/time/ 0700
