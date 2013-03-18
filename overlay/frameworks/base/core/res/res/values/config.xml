@@ -96,7 +96,8 @@
     </integer-array>
 
     <string-array translatable="false" name="config_tether_usb_regexs">
-    <item>"rndis0"</item>
+	    <item>usb\\d</item> 
+        <item>rndis\\d</item> 
     </string-array>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
