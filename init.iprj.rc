@@ -19,7 +19,24 @@ on boot
     mkdir /data/amit 0770 compass system
     mkdir /data/gesture 0770 compass system
     chown system system /sys/devices/virtual/input/lge_touch/keyguard
-
+    chown root system /sys/devices/virtual/bdi/179:0/read_ahead_kb
+    chmod 0660 /sys/devices/virtual/bdi/179:0/read_ahead_kb
+    chown system system /sys/class/timed_output/vibrator/amp
+    chmod 0660 /sys/class/timed_output/vibrator/amp
+    chown system system /sys/module/bcmdhd/parameters/wifi_pm
+    chmod 0660 /sys/module/bcmdhd/parameters/wifi_pm
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0660 /sys/kernel/fast_charge/force_fast_charge
+    chown root system /proc/sys/vm/dirty_writeback_centisecs
+    chmod 0660 /proc/sys/vm/dirty_writeback_centisecs
+    chown root system /proc/sys/vm/dirty_expire_centisecs
+    chmod 0660 /proc/sys/vm/dirty_expire_centisecs
+    chown root system /proc/sys/vm/dirty_background_ratio
+    chmod 0660 /proc/sys/vm/dirty_background_ratio
+    chown root system /proc/sys/vm/dirty_ratio
+    chmod 0660 /proc/sys/vm/dirty_ratio
+    chown root system /proc/sys/vm/vfs_cache_pressure
+    chmod 0660 /proc/sys/vm/vfs_cache_pressure
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
