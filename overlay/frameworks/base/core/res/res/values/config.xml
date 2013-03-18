@@ -31,50 +31,50 @@
     <!-- These are all dummies, but need to be present to enable UI control of auto-brightness
                   The actual control and values are all in-kernel -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>11</item>
-        <item>46</item>
-        <item>96</item>
-        <item>201</item>
-        <item>401</item>
-        <item>551</item>
-        <item>901</item>
-        <item>1201</item>
-        <item>2001</item>
-        <item>3001</item>
+		<item>21</item> 
+		<item>61</item> 
+		<item>126</item> 
+		<item>251</item> 
+		<item>401</item> 
+		<item>621</item> 
+		<item>831</item> 
+		<item>1201</item> 
+		<item>1801</item> 
+		<item>3501</item> 
     </integer-array>
     <!-- Array of output values for LCD backlight corresponding to the LUX values
                   in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>52</item>
-        <item>64</item>
-        <item>84</item>
-        <item>102</item>
-        <item>122</item>
-        <item>140</item>
-        <item>168</item>
-        <item>190</item>
-        <item>210</item>
-        <item>226</item>
-        <item>255</item>
+		<item>18</item> 
+		<item>28</item> 
+		<item>36</item> 
+		<item>48</item> 
+		<item>68</item> 
+		<item>72</item> 
+		<item>90</item> 
+		<item>102</item> 
+		<item>136</item> 
+		<item>166</item> 
+		<item>226</item> 
     </integer-array>
     <!-- Array of output values for button backlight corresponding to the LUX values
                   in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
+		<item>255</item> 
+		<item>255</item> 
+		<item>255</item> 
+		<item>255</item> 
+		<item>255</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
     </integer-array>
 
     <!-- Array of output values for keyboard backlight corresponding to the LUX values
@@ -82,17 +82,17 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
+		<item>0</item> 
     </integer-array>
 
     <string-array translatable="false" name="config_tether_usb_regexs">
@@ -153,4 +153,42 @@
     <string name="default_wallpaper_component">com.android.phasebeam/.PhaseBeamWallpaper</string>
 
     <bool translatable="false" name="config_wifi_p2p_support">true</bool>
+	<integer-array name="config_longPressVibePattern">
+		<item>0</item> 
+		<item>25</item> 
+    </integer-array>
+	
+	<integer-array name="config_virtualKeyVibePattern">
+		<item>0</item> 
+		<item>20</item> 
+    </integer-array>
+
+	<integer-array name="config_keyboardTapVibePattern">
+		<item>0</item> 
+		<item>15</item> 
+    </integer-array>
+
+	<integer-array name="config_safeModeDisabledVibePattern">
+		<item>0</item> 
+		<item>1</item> 
+		<item>20</item> 
+		<item>21</item> 
+    </integer-array>
+
+	<integer-array name="config_safeModeEnabledVibePattern">
+		<item>0</item> 
+		<item>1</item> 
+		<item>20</item> 
+		<item>21</item> 
+		<item>500</item> 
+		<item>600</item> 
+  </integer-array>
+
+  <integer-array name="config_scrollBarrierVibePattern">
+		<item>0</item> 
+		<item>15</item> 
+		<item>10</item> 
+		<item>10</item> 
+  </integer-array>
+
 </resources>
