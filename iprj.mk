@@ -137,6 +137,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.maxlayer=3 \
     debug.mdpcomp.logs=0
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.allow.mock.location=1 \
+    ro.debuggable=1 \
+    persist.sys.usb.config=mtp
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_MANUFACTURER := LGE
