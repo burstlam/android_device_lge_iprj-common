@@ -101,6 +101,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hwaddrs
 
+PRODUCT_PACKAGES += \
+    NitroParts \
+
 # Charger mode
 PRODUCT_PACKAGES += \
     charger \
