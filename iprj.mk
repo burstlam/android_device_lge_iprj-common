@@ -131,6 +131,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
     ro.opengles.version=131072 \
     com.qc.hardware=true \
+    ro.hdmi.enable=true \
     ro.bt.bdaddr_path=/data/misc/bd_addr \
     ro.product.camera=lgp930 \
     ro.ril.shutdown=true \

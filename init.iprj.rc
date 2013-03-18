@@ -64,6 +64,9 @@ on boot
     chown system system /sys/devices/system/cpu/cpufreq/ondemand/down_differential
     chmod 0660 /sys/devices/system/cpu/cpufreq/ondemand/down_differential
 
+    # original perms
+    symlink /dev/graphics/fb1 /dev/graphics/hdmi
+
 on early-init
     mkdir /storage 0050 system sdcard_r
     mkdir /mnt/shell/sdcard 0700 shell shell
@@ -278,6 +281,6 @@ service hdmid /system/bin/hdmid
     socket hdmid stream 0660 root system graphics
     disabled
 
-#on property:ro.hdmi.enable=true
-#    start hdmid
+on property:ro.hdmi.enable=true
+    start hdmid
 
