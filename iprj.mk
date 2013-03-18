@@ -98,7 +98,10 @@ PRODUCT_PACKAGES += \
     libOmxAacEnc \
     libOmxAmrEnc \
     libmm-omxcore \
-    libOmxCore
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libdashplayer
 
 PRODUCT_PACKAGES += \
     hwaddrs \
