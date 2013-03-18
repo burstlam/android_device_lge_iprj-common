@@ -44,7 +44,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/pmic8058_pwrkey.kl:system/usr/keylayout/pmic8058_pwrkey.kl \
     $(LOCAL_PATH)/config/synaptics_ts.kl:system/usr/keylayout/touch_dev.kl \
     $(LOCAL_PATH)/config/synaptics_ts.idc:system/usr/idc/touch_dev.idc \
-    $(LOCAL_PATH)/config/thermald.conf:system/etc/thermald.conf
+    $(LOCAL_PATH)/config/thermald.conf:system/etc/thermald.conf \
+    $(LOCAL_PATH)/config/hosts:system/etc/hosts
 
 # WiFi
 PRODUCT_COPY_FILES += \
