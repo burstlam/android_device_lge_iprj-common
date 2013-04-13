@@ -1,0 +1,11 @@
+#!/system/bin/sh
+# PrimeDirective, Sonicxml, DHO, Nuclearmistake
+# With inspiration from DroidTh3ory
+
+sync
+sysrw
+
+busybox rm -f /cache/*.apk
+busybox rm -f /cache/*.tmp
+busybox rm -f /data/dalvik-cache/*.apk
+busybox rm -f /data/dalvik-cache/*.tmp

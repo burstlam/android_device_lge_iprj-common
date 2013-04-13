@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="8095131950334945205">"計算機"</string>
+    <!-- Application copyright -->
+    <string name="application_copyright">版權所有 \u00A9 CyanogenMod 2013</string>
+    <string name="error" msgid="9197457880925804499">"出錯"</string>
+    <string name="del" msgid="6248896117422989693">"移除"</string>
+    <string name="clear" msgid="8103610981407459768">"清除"</string>
+    <string name="sin" msgid="6793866152659175277">"sin"</string>
+    <string name="cos" msgid="6901841853098114414">"cos"</string>
+    <string name="tan" msgid="7957459816738554960">"tan"</string>
+    <string name="e" msgid="1377847800971731483">"e"</string>
+    <string name="solveForX">求解 X</string>
+    <string name="solveForY">求解 Y</string>
+    <string name="mod">取余數</string>
+    <string name="ln" msgid="6888500680285403344">"ln"</string>
+    <string name="lg" msgid="873623857385418182">"log"</string>
+    <string name="basic" msgid="7691469861698059753">"基本面板"</string>
+    <string name="advanced" msgid="7122495413742976492">"進階面板"</string>
+    <!-- Menu item text to take user to the screen with matrices. -->
+    <string name="matrix">矩陣面板</string>
+    <!-- Menu item text to take user to the screen with the graph. -->
+    <string name="graph">圖表面板</string>
+    <!-- Menu item text to take user to the screen with the function operators. -->
+    <string name="function">函數面板</string>
+    <!-- Menu item text to take user to the screen with the hex digits and operators. -->
+    <string name="hexPanel">十六進位面板</string>
+    <string name="clear_history" msgid="8458043980601165012">"清除曆史記錄"</string>
+    <string name="text_copied_toast" msgid="5801480710472541833">"字檔已複製."</string>
+
+    <!-- History menu item for copying item -->
+    <string name="copy">複製 \"%s\"</string>
+    <!-- History menu item for removing item from history -->
+    <string name="remove_from_history">從曆史記錄移除</string>
+    <!-- History menu item for viewing history -->
+    <string name="showHistory">察看曆史記錄</string>
+    <!-- History menu item for hiding history -->
+    <string name="hideHistory">隱藏曆史記錄</string>
+    <!-- History menu item for entering settings -->
+    <string name="settings">設定</string>
+
+    <!-- Matrix page text -->
+    <string name="determinantDesc">行列式</string>
+    <string name="eigenvalueDesc">特徵向量</string>
+    <string name="plus_row">+行</string>
+    <string name="minus_row">-行</string>
+    <string name="plus_col">+列</string>
+    <string name="minus_col">-列</string>
+    <string name="next">下一個</string>
+
+    <!-- Hex page text -->
+    <string name="hexDesc">十六進位</string>
+    <string name="binDesc">二進位</string>
+    <string name="decDesc">十進位</string>
+
+    <!-- Settings page text -->
+    <string name="pref_panels">面板</string>
+    <string name="pref_actions">作業</string>
+    <string name="pref_units">單位</string>
+    <string name="pref_about">關於</string>
+    <string name="returnToBasic">返回到基本面板</string>
+    <string name="trigUnits">三角函數單位</string>
+
+    <!-- Clings -->
+    <string name="cling_simple_title">歡迎</string>
+    <string name="cling_simple_msg">左右滑動將察看其他的面板. 您可在設定內禁用不需要的面板.</string>
+    <string name="cling_matrix_title">矩陣</string>
+    <string name="cling_matrix_msg">點擊這裡來建立與解決矩陣問題.</string>
+    <string name="cling_hex_title">變更進位</string>
+    <string name="cling_hex_msg">在十進位 (Dec), 二進位 (Bin), 與十六進位 (Hex) 之間進行切換.\n\n警告: 如果您發現得到的結果是錯誤的, 這應該是您選取了錯誤的進位而導致的. 計算機的預設進位是十進位.</string>
+    <string name="cling_graph_title">圖表</string>
+    <string name="cling_graph_msg">圖表將會在這裡自動察看. 請到進階面板并使用 X 與 Y 來建立一個函數.</string>
+    <string name="cling_dismiss">確定</string>
+
+    <string name="easter_egg">用盡了渾身力氣去解數, 但依然無效.</string>
+</resources>

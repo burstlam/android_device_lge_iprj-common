@@ -152,5 +152,4 @@
                   specified -->
     <string name="default_wallpaper_component">com.android.phasebeam/.PhaseBeamWallpaper</string>
 
-    <bool translatable="false" name="config_wifi_p2p_support">true</bool>
 </resources>

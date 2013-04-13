@@ -15,6 +15,33 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/iprj-common/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Custom APP
+PRODUCT_PACKAGES += \
+    AppWidgetPicker \
+    Trebuchet \
+    CMFileManager \
+    NitroParts
+
+# init.d and sysctl
+PRODUCT_COPY_FILES += \
+    device/lge/iprj-common/prebuilt/bin/zipalign:system/bin/zipalign \
+    device/lge/iprj-common/prebuilt/etc/init.d/03sqlitetweaks:system/etc/init.d/03sqlitetweaks \
+    device/lge/iprj-common/prebuilt/etc/init.d/04cleaning:system/etc/init.d/04cleaning \
+    device/lge/iprj-common/prebuilt/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
+    device/lge/iprj-common/prebuilt/etc/init.d/90bktweaks:system/etc/init.d/90bktweaks \
+    device/lge/iprj-common/prebuilt/etc/init.d/98VMtweaks:system/etc/init.d/98VMtweaks \
+    device/lge/iprj-common/prebuilt/etc/init.d/97cleaning2:system/etc/init.d/97cleaning
+   
+# GPS conf
+PRODUCT_COPY_FILES += \
+    device/lge/iprj-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/lge/iprj-common/prebuilt/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+# Terminal
+PRODUCT_COPY_FILES += \
+    device/lge/iprj-common/prebuilt/app/Term.apk:system/app/Term.apk \
+    device/lge/iprj-common/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/config/media_codecs.xml:system/etc/media_codecs.xml
@@ -95,7 +122,10 @@ PRODUCT_PACKAGES += \
     libOmxAacEnc \
     libOmxAmrEnc \
     libmm-omxcore \
-    libOmxCore
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libdashplayer
 
 PRODUCT_PACKAGES += \
     hwaddrs
@@ -110,15 +140,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     mobiledata.interfaces=rmnet_sdio0,rmnet_sdio1 \
     rild.libpath=/system/lib/libril-qc-qmi-1.so \
+    ro.vendor.extension_library=/system/lib/libqc-opt.so \
     DEVICE_PROVISIONED=1 \
     ro.telephony.ril_class=LGEQualcommUiccRIL \
     wifi.interface=wlan0 \
     debug.sf.hw=1 \
     debug.enabletr=true \
     debug.composition.type=dyn \
-    persist.sys.usb.config=mtp,adb \
+    persist.sys.usb.config=mass_storage,adb \
     ro.opengles.version=131072 \
     com.qc.hardware=true \
+    ro.hdmi.enable=true \
     ro.bt.bdaddr_path=/data/misc/bd_addr \
     ro.ril.shutdown=true \
     debug.mdpcomp.maxlayer=3 \

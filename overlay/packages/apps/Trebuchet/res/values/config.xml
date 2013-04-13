@@ -1,4 +1,20 @@
 <resources>
-    <integer name="target_cell_count_x">4</integer>
-    <integer name="target_cell_count_y">5</integer>
+    <bool name="config_largeHeap">true</bool>
+    <bool name="allow_rotation">true</bool>
+
+    <!--<integer name="default_cell_count_x">5</integer>
+    <integer name="default_cell_count_y">5</integer>-->
+
+    <!-- Fade/zoom in/out duration & scale in the AllApps transition.
+         Note: This should be less than the workspaceShrinkTime as they happen together. -->
+    <integer name="config_appsCustomizeZoomInTime">250</integer>
+    <integer name="config_appsCustomizeZoomOutTime">500</integer>
+    <integer name="config_appsCustomizeZoomScaleFactor">7</integer>
+    <integer name="config_appsCustomizeFadeInTime">200</integer>
+    <integer name="config_appsCustomizeFadeOutTime">150</integer>
+    <integer name="config_appsCustomizeWorkspaceShrinkTime">200</integer>
+    <integer name="config_appsCustomizeWorkspaceAnimationStagger">40</integer>
+    <integer name="config_workspaceAppsCustomizeAnimationStagger">100</integer>
+
+
 </resources>

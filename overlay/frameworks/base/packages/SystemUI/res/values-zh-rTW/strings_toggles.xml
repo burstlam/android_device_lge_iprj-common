@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 AOKP
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="toggle_USER">使用者</string>
+    <string name="toggle_BRIGHTNESS">亮度</string>
+    <string name="toggle_SETTINGS">設定</string>
+    <string name="toggle_WIFI">WiFi</string>
+    <string name="toggle_SIGNAL">信號</string>
+    <string name="toggle_ROTATE">自動旋轉</string>
+    <string name="toggle_CLOCK">時鐘</string>
+    <string name="toggle_GPS">GPS</string>
+    <string name="toggle_IME">輸入法</string>
+    <string name="toggle_BATTERY">電量</string>
+    <string name="toggle_AIRPLANE_MODE">飛航模式</string>
+    <string name="toggle_BLUETOOTH">藍牙</string>
+    <string name="toggle_SWAGGER">自爆</string>
+    <string name="toggle_VIBRATE">振動</string>
+    <string name="toggle_SILENT">靜音</string>
+    <string name="toggle_FCHARGE">快充模式</string>
+    <string name="toggle_SYNC">同步</string>
+    <string name="toggle_NFC">NFC近場通訊</string>
+    <string name="toggle_TORCH">手電筒</string>
+    <string name="toggle_WIFITETHER">WiFi 綁定</string>
+    <string name="toggle_USBTETHER">USB 綁定</string>
+    <string name="toggle_2G">2G</string>
+    <string name="toggle_LTE">LTE</string>
+    <string name="toggle_FAVCONTACT">常用聯絡人</string>
+    <string name="toggle_SOUNDSTATE">聲音模式</string>
+    <string name="toggle_VOLUME">音量</string> 
+    <string name="toggle_NAVBARHIDE">隱藏導航欄</string>
+    <string name="toggle_QUICKRECORD">一鍵錄音</string>
+    <string name="toggle_POWERMENU">電源鍵菜單</string>
+    <string name="toggle_PROFILE">情景模式</string>
+    <string name="toggle_STATUSBAR">隱藏狀態欄</string>
+    <string name="toggle_QUIETHOURS">免打擾模式</string>
+    <string name="toggle_SLEEP">一鍵關屏</string>
+    <string name="toggle_PIE">PIE</string>
+    <string name="toggle_REBOOT">重啟</string>
+    <string name="toggle_SCREENSHOT">截屏</string>
+    <string name="toggle_CUSTOM">自定義</string>
+</resources>

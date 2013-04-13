@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- More Settings screen, power button title -->
+    <string name="pref_camera_power_shutter_title">電源鍵快門</string>
+
+    <!-- Other settings -->
+    <string name="pref_camera_focustime_title">觸屏對焦持續時間</string>
+    <string name="pref_camera_focustime_summary">選擇觸屏對焦持續時間</string>
+
+    <!-- Settings screen, Timer mode entries -->
+    <string name="pref_camera_focustime_entry_10">10秒</string>
+    <string name="pref_camera_focustime_entry_15">15秒</string>
+    <string name="pref_camera_focustime_entry_20">20秒</string>
+    <string name="pref_camera_focustime_entry_30">30秒</string>
+    <string name="pref_camera_focustime_entry_40">40秒</string>
+    <string name="pref_camera_focustime_entry_infinit">無限</string>
+
+    <!-- Settings screen, Anti Banding title
+    <string name="pref_camera_antibanding_title">防屏幕干擾帶紋</string> -->
+
+    <!-- Settings screen, Anti Banding entries
+    <string name="pref_camera_antibanding_entry_0">關閉</string>
+    <string name="pref_camera_antibanding_entry_1">50 Hz</string>
+    <string name="pref_camera_antibanding_entry_2">60 Hz</string>
+    <string name="pref_camera_antibanding_entry_3">自動</string> -->
+
+    <!-- Settings screen, Timer mode title
+    <string name="pref_camera_timer_title">自拍模式</string> -->
+
+    <!-- Settings screen, Timer mode entries
+    <string name="pref_camera_timer_entry_0">關閉</string>
+    <string name="pref_camera_timer_entry_10">10秒</string>
+    <string name="pref_camera_timer_entry_20">20秒</string>
+    <string name="pref_camera_timer_entry_30">30秒</string>
+    <string name="pref_camera_timer_entry_40">40秒</string>
+    <string name="pref_camera_timer_entry_50">50秒</string>
+    <string name="pref_camera_timer_entry_60">60秒</string> -->
+
+    <!-- Settings screen, Burst mode title -->
+    <string name="pref_camera_burst_title">連拍模式</string>
+
+    <!-- Settings screen, Burst mode entries -->
+    <string name="pref_camera_burst_entry_off">關閉</string>
+    <string name="pref_camera_burst_entry_5">5 幀</string>
+    <string name="pref_camera_burst_entry_10">10 幀</string>
+    <string name="pref_camera_burst_entry_15">15 幀</string>
+    <string name="pref_camera_burst_entry_20">20 幀</string>
+
+    <!-- More Settings screen, volume zoom setting title text
+    <string name="pref_camera_volumezoom_title">音量鍵縮放</string> -->
+
+    <!-- More Settings screen, Volume zoom dialog choices
+    <string name="pref_camera_volumezoom_entry_off">關閉</string>
+    <string name="pref_camera_volumezoom_entry_on">啟用</string> -->
+
+
+    <!-- Settings screen, JPEG -->
+    <string name="pref_camera_jpeg_title">JPEG質量</string>
+
+    <!-- Settings screen, JPEG dialog radio button choices -->
+    <string name="pref_camera_jpeg_entry_super">無損</string>
+    <string name="pref_camera_jpeg_entry_high">高</string>
+    <string name="pref_camera_jpeg_entry_medium">中</string>
+    <string name="pref_camera_jpeg_entry_low">低</string>
+
+    <!-- <string name="pref_camera_focustimemode_entry_continuouspicture">連續拍攝</string> -->
+
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_camera_coloreffect_title">色彩效果</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices-->
+    <string name="pref_camera_coloreffect_entry_none">無</string>
+    <string name="pref_camera_coloreffect_entry_mono">單色</string>
+    <string name="pref_camera_coloreffect_entry_sepia">懷舊</string>
+    <string name="pref_camera_coloreffect_entry_negative">負片</string>
+    <string name="pref_camera_coloreffect_entry_solarize">過度曝光</string>
+    <string name="pref_camera_coloreffect_entry_posterize">海報</string>
+    <string name="pref_camera_coloreffect_entry_aqua">水底</string>
+    <string name="pref_camera_coloreffect_entry_emboss">浮雕</string>
+    <string name="pref_camera_coloreffect_entry_sketch">素描</string>
+    <string name="pref_camera_coloreffect_entry_neon">霓虹燈</string>
+    <string name="pref_camera_coloreffect_entry_pastel">油彩</string>
+    <string name="pref_camera_coloreffect_entry_mosaic">馬賽克</string>
+    <string name="pref_camera_coloreffect_entry_redtint">紅色調</string>
+    <string name="pref_camera_coloreffect_entry_bluetint">藍色調</string>
+    <string name="pref_camera_coloreffect_entry_greentint">綠色調</string>
+
+    <!-- Settings screen, focustime mode dialog radio button choices -->
+    <string name="pref_camera_focustimemode_entry_auto">自動</string>   
+    <string name="pref_camera_focustimemode_entry_continuouspicture">連續拍攝</string>
+    <string name="pref_camera_focustimemode_entry_extended">延長</string>
+    <string name="pref_camera_focustimemode_entry_facedetect">臉部辨識</string>
+    <string name="pref_camera_focustimemode_entry_facepriority">臉部優先</string>
+    <string name="pref_camera_focustimemode_entry_fixed">定焦</string>
+    <string name="pref_camera_focustimemode_entry_infinity">無限遠</string>
+    <string name="pref_camera_focustimemode_entry_macro">微距</string>
+    <string name="pref_camera_focustimemode_entry_portrait">人像</string>
+
+    <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+    <string name="pref_camera_scenemode_entry_auto">自動</string>
+    <string name="pref_camera_scenemode_entry_hdr">HDR</string>
+    <string name="pref_camera_scenemode_entry_nightportrait">入夜人像</string>
+    <string name="pref_camera_scenemode_entry_nightindoor">入夜室內</string>
+    <string name="pref_camera_scenemode_entry_supernight">黑夜</string>
+    <string name="pref_camera_scenemode_entry_action">動作</string>
+    <string name="pref_camera_scenemode_entry_sunset">日落</string>
+    <string name="pref_camera_scenemode_entry_party">派對</string>
+    <string name="pref_camera_scenemode_entry_duskdawn">黃昏</string>
+    <string name="pref_camera_scenemode_entry_candlelight">蠋光</string>
+    <string name="pref_camera_scenemode_entry_fallcolor">秋色</string>
+    <string name="pref_camera_scenemode_entry_closeup">近距</string>
+    <string name="pref_camera_scenemode_entry_landscape">風景</string>
+    <string name="pref_camera_scenemode_entry_fireworks">煙花</string>
+    <string name="pref_camera_scenemode_entry_aqua">水中</string>
+    <string name="pref_camera_scenemode_entry_sports">運動</string>
+    <string name="pref_camera_scenemode_entry_mood">情態</string>
+    <string name="pref_camera_scenemode_entry_cine">電影</string>
+    <string name="pref_camera_scenemode_entry_oldfilm">懷舊</string>
+    <string name="pref_camera_scenemode_entry_beach">海灘</string>
+    <string name="pref_camera_scenemode_entry_portrait">人像</string>
+    <string name="pref_camera_scenemode_entry_snow">雪景</string>
+    <string name="pref_camera_scenemode_entry_theatre">劇院</string>
+    <string name="pref_camera_scenemode_entry_steadyphoto">靜態</string>
+    <string name="pref_camera_scenemode_entry_backlight">背光</string>
+    <string name="pref_camera_scenemode_entry_document">文件</string>
+    <string name="pref_camera_scenemode_entry_barcode">條碼</string>
+    <string name="pref_camera_scenemode_entry_text">文字</string>
+
+    <!-- Settings screen, ISO dialog radio button choices -->
+    <string name="pref_camera_iso_entry_auto">自動</string>
+    <string name="pref_camera_iso_entry_isodeblur">自動 (HJR)</string>
+
+    <!-- Settings screen, ISO dialog radio button choices -->
+    <string name="pref_camera_iso_entry_auto">自动</string>
+    <string name="pref_camera_iso_entry_isodeblur">自动 (HJR)</string>
+
+</resources>

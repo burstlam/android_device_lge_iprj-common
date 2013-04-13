@@ -1,0 +1,20 @@
+#!/system/bin/sh
+#
+# A XY Script to:
+# Clean the "Folletto Style"
+# Based on Zen Kernel's
+#
+
+bb="/system/xbin/busybox"
+
+$bb rm -rf /data/lost+found/* 2> /dev/null;
+$bb rm -rf /system/lost+found/* 2> /dev/null;
+$bb rm -rf /preload/lost+found/* 2> /dev/null;
+$bb rm -rf /cache/lost+found/* 2> /dev/null;
+$bb rm -rf /data/tombstones/* 2> /dev/null;
+$bb rm -rf /data/anr/* 2> /dev/null;
+$bb rm -rf /cache/*.apkbusybox;
+$bb rm -rf /cache/*.tmpbusybox;
+$bb rm -rf /data/system/dropbox/*;
+$bb rm -rf /data/dalvik-cache/*.apkbusybox;
+$bb rm -rf /data/dalvik-cache/*.tmp;

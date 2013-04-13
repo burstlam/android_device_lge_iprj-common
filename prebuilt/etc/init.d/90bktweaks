@@ -1,0 +1,288 @@
+#!/system/bin/sh
+
+# 自訂數值 Variable
+
+
+# 內核版本 (請勿更改)
+kernelVersion=2
+
+# CPU最低操作頻率
+minFreq=230000
+# CPU最高操作頻率
+# maxFreq=1200000
+# CPU頻率模式
+scaleGov=interactive
+
+# 變換CPU操作速度取樣
+samplingRate=100000
+upThreshold=80
+goHispeed=80
+
+plugOut=100
+hiSpeed=0
+inputBoost=1
+
+# CPU IO 調頻控制
+# scheChoice=sio
+
+# 內核亮屏反應調速優化
+doSon=off
+
+# 內核溫度保險閥值
+# CPU 溫度控制 （數值＝攝氏溫度*1000）
+tTemp=75000
+
+# GPU 超頻控制 0 = 307mhz, 1 = 384mhz, 2 = 512mhz (不建議設為#2)
+#gpuOc=307
+
+
+# OMAP CPU SmartReflex 數值
+srMpu=830000
+srIva=830000
+srCore=830000
+
+# UNDERVOLT CPU 降壓(0為關閉 1為開啟)
+doUv=0
+
+# uV***為速度,右方為操作電壓(mv)
+# 基於安全和穩定的考量, 我的內核操作頻率支援350至1350MHZ
+# 官方電壓數字
+# uV180=850-925
+# uV350=950-1000
+# uV700=1150-1200
+# uV920=1250-1275
+# uV1200=1300-1350
+# uV1350=1325-1375
+
+uV180=820
+uV230=820
+uV350=850
+uV700=925
+uV920=1025
+uV1200=1125
+uV1350=1175
+uV1520=1250
+uV1650=1400
+
+# 顏色調整 [A] 
+# 0 : 為關閉, 
+# 1 : 系統默認, 
+# 2及3 : 兩種XDA論壇得到主流預設模式, 主要解決偏紅問題 
+# 4 屏幕亮度最低
+# 5為自設定,請修改[B]下面三種數值 
+#doColor=0
+
+# docolor=5 自定義選擇
+# 顏色調整 [B]自設定紅綠藍三種色階, 數值由 -255 至 255, 建議調整值限制在+10至-10間
+# colorRed=0
+# colorGreen=0
+# colorBlue=0
+
+# Gamma 值
+# gammaValue=5
+
+# 顏色倍數
+# domulti=0
+# 顏色倍數保險
+#noSafety=0
+#multiRed=2004318071
+#multiGreen=2004318071
+#multiBlue=2004318071
+
+# 振動強度，有效數值為1000-1600 (改用系統設置>裝置設定中變動)
+# vibValue=1450
+
+# SD卡讀取提速
+doSdcard=off
+# 系統Data檔案掛載提速
+doSystem=off
+# AC模式充電提速
+doCharge=off
+
+# Wifi 關屏提速
+# doWifi=off
+# 耳機高效模式, 注意, 播放音樂可能會造成耗電
+doHq=0
+# 音量提升 數值由 0至3 (0=系統默認,3為最大提升值)
+doBoost=0
+
+# 進取內存管理
+# doMin=off
+
+# 關閉系統記錄功能
+doLog=on
+
+# TouchWake 功能
+doTouch=on
+
+initPath=/system/etc/init.d/98bktweaks
+busybox=/system/xbin/busybox
+
+busybox mount -o remount,rw /system
+
+# 系統檔案提速
+if busybox [ "$doSystem" = ".on" ]; then
+	busybox mount -o remount,noatime,barrier=0,nobh /system
+	busybox mount -o remount,noatime,barrier=0,nobh /data
+	busybox mount -o remount,noatime,barrier=0,nobh /cache
+fi
+
+# SD卡讀取提速 [sd card speed boost]
+if busybox [ "$doSdcard" = ".on" ]; then
+	if [ -e /sys/devices/virtual/bdi/179:0/read_ahead_kb ]; then
+	echo "1024" > /sys/devices/virtual/bdi/179:0/read_ahead_kb
+	fi
+fi
+
+# 檢查內核最高速度判斷版本 Check kernel version
+if busybox [ -n "$( busybox grep 1520000 /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies )" ]; then
+	busybox sed -i 's|^kernelVersion=.*|kernelVersion=2|' $initPath
+elif busybox [ -n "$( busybox grep 1420000 /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies )" ]; then
+	busybox sed -i 's|^kernelVersion=.*|kernelVersion=1|' $initPath
+else
+	busybox sed -i 's|^kernelVersion=.*|kernelVersion=3|' $initPath
+fi
+
+# CPU IO 調頻控制
+#if busybox [ "$scheChoice" = "deadline" ]; then
+#	echo "deadline" > /sys/block/mmcblk0/queue/scheduler
+#	echo "deadline" > /sys/block/mmcblk0boot0/queue/scheduler
+#	echo "deadline" > /sys/block/mmcblk0boot1/queue/scheduler
+#	echo "deadline" > /sys/block/mtdblock0/queue/scheduler
+#elif busybox [ "$scheChoice" = "sio" ]; then
+#	echo "sio" > /sys/block/mmcblk0/queue/scheduler
+#	echo "sio" > /sys/block/mmcblk0boot0/queue/scheduler
+#	echo "sio" > /sys/block/mmcblk0boot1/queue/scheduler
+#	echo "sio" > /sys/block/mtdblock0/queue/scheduler
+#fi
+
+# 啟用預設調頻腳本 Governor choice at boot
+# echo "$scaleGov" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2> /dev/null
+
+#if [ "$scaleGov" = "interactivex" ]; then
+#	sleep 1
+#	echo "$goHispeed" > /sys/devices/system/cpu/cpufreq/interactivex/go_hispeed_load
+#	echo "$maxFreq" > /sys/devices/system/cpu/cpufreq/interactivex/hispeed_freq
+#elif [ "$scaleGov" = "interactive" ]; then
+#	sleep 1
+#	echo "$goHispeed" > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+#	echo "$maxFreq" > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+#elif [ "$scaleGov" = "hotplug" ]; then
+#	sleep 1
+#	echo "$samplingRate" > /sys/devices/system/cpu/cpufreq/hotplug/sampling_rate
+#	echo "$upThreshold" > /sys/devices/system/cpu/cpufreq/hotplug/up_threshold
+#elif [ "$scaleGov" = "hotplugx" ]; then#
+#	sleep 1
+#	echo "$samplingRate" > /sys/devices/system/cpu/cpufreq/hotplug/sampling_rate
+#	echo "$upThreshold" > /sys/devices/system/cpu/cpufreq/hotplug/up_threshold
+#elif [ "$scaleGov" = "ondemand" ]; then
+#	sleep 1
+#	echo "$samplingRate" > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
+#	echo "$upThreshold" > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold
+#fi
+
+
+# CPU最低操作頻率 Minimum frequency at boot
+# echo "$minFreq" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 2> /dev/null
+
+
+# CPU最高操作頻率 Maximum frequency at boot
+# echo "$maxFreq" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 2> /dev/null
+
+# 內核溫度保險閥值
+echo "$tTemp" > /sys/class/misc/tempcontrol/templimit
+
+# 開機時設置CPU降壓 Undervolt at boot
+if busybox [ $kernelVersion -eq 2 ]; then
+	if [ $doUv -eq 1 ]; then
+		echo "$uV1650 $uV1520 $uV1350 $uV1200 $uV920 $uV700 $uV350 $uV230" > /sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table 2> /dev/null
+	fi
+fi
+
+# Smart reflex
+echo "$srMpu" > /sys/kernel/debug/smartreflex/sr_mpu/vmin
+echo "$srIva" > /sys/kernel/debug/smartreflex/sr_iva/vmin
+echo "$srCore" > /sys/kernel/debug/smartreflex/sr_core/vmin
+
+
+# 內核亮屏調速優化
+if busybox [ "$doSon" = ".on" ]; then
+    echo "0" > /proc/sys/kernel/sched_child_runs_first
+    echo "1000000" > /proc/sys/kernel/sched_latency_ns
+    echo "100000" > /proc/sys/kernel/sched_min_granularity_ns
+    echo "-1" > /proc/sys/kernel/sched_rt_runtime_us
+    echo "100000" > /proc/sys/kernel/sched_rt_period_us
+    echo "95000" > /proc/sys/kernel/sched_rt_runtime_us
+    echo "25000" > /proc/sys/kernel/sched_wakeup_granularity_ns
+fi
+
+# GPU 超頻
+#if busybox [ "$gpuOc" = "307" ]; then
+#	echo "0" > /sys/devices/system/cpu/cpu0/cpufreq/gpu_oc
+#elif busybox [ "$gpuOc" = "384" ]; then
+#	echo "1" > /sys/devices/system/cpu/cpu0/cpufreq/gpu_oc
+#elif busybox [ "$gpuOc" = "512" ]; then
+#	echo "2" > /sys/devices/system/cpu/cpu0/cpufreq/gpu_oc
+#fi
+
+# 色彩倍頻及保險開關
+#if busybox [ "$noSafety" = "1" ]; then
+#	echo "0" > /sys/class/misc/colorcontrol/safety_enabled
+#fi
+
+# 音量提升 數值由 0至3 (0=系統默認,3為最大提升值)
+if busybox [ $doBoost = 3 ]; then
+	echo "3" > /sys/class/misc/soundcontrol/volume_boost
+elif busybox [ $doBoost = 2 ]; then
+	echo "2" > /sys/class/misc/soundcontrol/volume_boost
+elif busybox [ $doBoost = 1 ]; then
+	echo "1" > /sys/class/misc/soundcontrol/volume_boost
+fi
+
+# 耳機高效模式, 注意, 播放音樂可能會造成耗電
+if busybox [ "$doHq" = "1" ]; then
+	echo "1" > /sys/class/misc/soundcontrol/highperf_enabled
+fi
+
+# 振動強度
+# echo "$vibValue" > /sys/class/misc/vibratorcontrol/vibrator_strength
+
+# KSM管理
+echo "1" >/sys/kernel/mm/ksm/run
+
+# 進取內存管理
+#if busybox [ "$doMin" = ".on" ]; then
+#	echo "#!system/bin/sh" > /data/local/tmp/99min
+#	echo " " >> /data/local/tmp/99min
+#	echo "sleep 30" >> /data/local/tmp/99min
+#	echo 'echo "0,1,2,4,8,15" > /sys/module/lowmemorykiller/parameters/adj' >> /data/local/tmp/99min
+#	echo 'echo "8099,10132,20000,20000,50000,100000" > /sys/module/lowmemorykiller/parameters/minfree' >> /data/local/tmp/99min
+#	sh /data/local/tmp/99min
+#fi
+
+# Wifi 關屏提升效能 （會提升耗電量）
+# if busybox [ "$doWifi" = ".on" ]; then
+#	echo "1" > /sys/module/bcmdhd/parameters/wifi_pm
+# fi
+
+# AC模式充電提速
+if busybox [ "$doCharge" = ".on" ]; then
+echo "1" > /sys/kernel/fast_charge/force_fast_charge
+fi
+
+# 關閉系統記錄功能
+busybox mount -o remount,rw /system
+if busybox [ "$doLog" = ".on" ]; then
+	rm /dev/log/main
+fi
+
+# Touch Wake: (觸屏喚醒：0＝默認關閉)
+# 增加系統的延遲值, 在自動關屏後段短時間內可以點擊屏幕再次返回桌面. 注意, 可能需要使用第三方軟件把鎖屏功能關閉.
+# 多少會增加一些耗電， 用電源鍵關屏的條件下無效
+if busybox [ "$doTouch" = ".on" ]; then 
+echo "1" > /sys/class/misc/touchwake/enabled
+fi
+延時值 45秒 （秒數*1000）
+echo "45000" >/sys/class/misc/touchwake/delay
+
+busybox mount -o remount,ro /system

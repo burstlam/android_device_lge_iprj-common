@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Reboot -->
+    <string name="reboot">重新啟動</string>
+
+    <!-- Reboot recovery option -->
+    <string name="reboot_recovery">Recovery模式</string>
+
+    <string name="reboot_progress">您的裝置正在重新啟動...</string>
+
+    <!-- Reboot recovery option -->
+    <string name="reboot_download">刷機模式</string>
+
+    <!-- Reboot recovery option -->
+    <string name="reboot_bootloader">Bootloader模式</string>
+
+    <string name="reboot_hot">熱重啟</string>
+
+    <string name="global_action_screenshot">屏幕截圖</string>
+
+    <string name="global_actions_toggle_expanded_desktop_mode">全屏模式</string>
+    <string name="global_actions_expanded_desktop_mode_on_status">啟用</string>
+    <string name="global_actions_expanded_desktop_mode_off_status">關閉</string>
+
+    <string name="global_actions_toggle_navbar_hide">導航欄控制台</string>
+
+	<string name="global_action_torch">手電筒</string>
+
+    <string name="openurl">打開 Url</string>
+
+    <!--CyanogenMod Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">默認</string>
+    <string name="profileNameWork">工作</string>
+    <string name="profileNameHome">住宅</string>
+    <string name="profileNameSilent">靜音</string>
+    <string name="profileNameNight">夜晚</string>
+
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">電話</string>
+    <string name="profileGroupCalendar">日曆</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">電子郵件</string>
+    <string name="profileGroupSMS">短信</string>
+
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">其他</string>
+
+    <!-- label for item that opens the profile choosing dialog -->
+    <string name="global_action_choose_profile">情景模式</string>
+
+    <string name="app_killed_message">程序已經清除</string>
+    <string name="trash">清除</string>
+
+    <!-- Awesome Action Stuff-->
+    <string name="action_home">主頁</string>
+    <string name="action_back">返回</string>
+    <string name="action_recents">最近任務</string>
+    <string name="action_recents_gb">最近任務 (薑餅風格)</string>
+    <string name="action_search">搜尋</string>
+    <string name="action_screenshot">截屏</string>
+    <string name="action_menu">菜單</string>
+    <string name="action_ime">切換輸入法</string>
+    <string name="action_kill">清除進程</string>
+    <string name="action_lastapp">上一個任務</string>
+    <string name="action_power">電源鍵</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_assist">搜尋 (Google Now)</string>
+    <string name="action_clockoptions">日期及時間</string>
+    <string name="action_voiceassist">語音搜尋</string>
+    <string name="action_torch">手電筒</string>
+    <string name="action_silent">鈴聲/靜音</string>
+    <string name="action_vib">鈴聲/手振</string>
+    <string name="action_silent_vib">鈴聲/振動/靜音</string>
+    <string name="action_event">事件</string>
+    <string name="action_today">本日活動</string>
+    <string name="action_alarm">鬧鐘</string>
+    <string name="action_null">空白</string>
+    <string name="action_app">自定義</string>
+</resources>

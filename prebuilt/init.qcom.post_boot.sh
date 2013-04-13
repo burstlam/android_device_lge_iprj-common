@@ -26,10 +26,10 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-target=`getprop ro.product.device`
+target=`getprop ro.cm.device`
 case "$target" in
 #platform.team@lge.com
-    "msm8660_surf" | "msm8660_csfb" | "hdk_8x60" | "i_atnt" | "i_skt" | "i_vzw" | "i_dcm" | "p930" | "su640" | "vs920" )
+    "msm8660_surf" | "msm8660_csfb" | "i_atnt" | "hdk_8x60" | "i_skt" | "i_dcm" | "p930" | "su640" )
 	 echo 1 > /sys/module/rpm_resources/enable_low_power/L2_cache
 	 echo 1 > /sys/module/rpm_resources/enable_low_power/pxo
 	 echo 2 > /sys/module/rpm_resources/enable_low_power/vdd_dig
@@ -43,6 +43,12 @@ case "$target" in
 	 echo 1 > /sys/module/pm_8x60/modes/cpu1/power_collapse/idle_enabled
 	 echo 1 > /sys/module/pm_8x60/modes/cpu0/standalone_power_collapse/idle_enabled
 	 echo 1 > /sys/module/pm_8x60/modes/cpu1/standalone_power_collapse/idle_enabled
+	 echo "intellidemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+	 echo "intellidemand" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+	 echo 50000 > /sys/devices/system/cpu/cpufreq/intellidemand/sampling_rate
+	 echo 90 > /sys/devices/system/cpu/cpufreq/intellidemand/up_threshold
+	 echo 1 > /sys/devices/system/cpu/cpufreq/intellidemand/io_is_busy
+	 echo 4 > /sys/devices/system/cpu/cpufreq/intellidemand/sampling_down_factor
 	 chown root.system /sys/devices/system/cpu/mfreq
 	 chmod 220 /sys/devices/system/cpu/mfreq
 	 chown root.system /sys/devices/system/cpu/cpu1/online
@@ -63,9 +69,17 @@ esac
 
 # Post-setup services
 case "$target" in
-    "msm8660_surf" | "msm8660_csfb" | "hdk_8x60" | "i_atnt" | "i_skt" | "i_vzw" | "i_dcm" | "p930" | "su640" | "vs920" )
-        start mpdecision
-        start thermald
+    "msm8660_surf" | "msm8660_csfb" | "i_atnt" | "hdk_8x60" | "i_skt" | "i_dcm" | "p930" | "su640" )
+        stop mpdecision
+        stop thermald
+    ;;
+esac
+
+case "$target" in
+    "p930" | "su640" )
+        if [ "`getprop gsm.version.baseband`" == "" ]; then
+            setprop gsm.version.baseband `dd if=/dev/block/mmcblk0p14 bs=128000 count=10 | strings |grep -- "-MDM92" | head -1`
+        fi
     ;;
 esac
 
@@ -76,4 +90,44 @@ case "$usb_config" in
     ;;
 esac
 
+#CPU Default Voltage Table
+echo "192000 750000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "310500 775000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "384000 775000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "432000 800000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "486000 800000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "540000 825000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "594000 825000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "648000 850000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "702000 850000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "756000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "810000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "864000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "918000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "972000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1026000 925000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1080000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1134000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1188000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1242000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1296000 1025000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1350000 1050000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1404000 1075000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1458000 1075000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1512000 1100000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1566000 1125000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1620000 1150000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1674000 1175000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1728000 1200000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1782000 1225000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1836000 1275000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1890000 1325000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1944000 1350000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 
+
+#Available frequencies:
+#3D: 320000000, 300000000, 266667000, 228571000, 200000000, 177778000, 27000000
+#2D: 266667000, 228571000, 200000000
+echo 266667000 > /sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/max_gpuclk
+echo 200000000 > /sys/devices/platform/kgsl-2d0.0/kgsl/kgsl-2d0/max_gpuclk
+echo 200000000 > /sys/devices/platform/kgsl-2d1.1/kgsl/kgsl-2d1/max_gpuclk

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0 
+ *
+ * Unless required by applicable law or agreed to in writing, software 
+ * distributed under the License is distributed on an "AS IS" BASIS, 
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and 
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--  AOKP Strings can go here... -->
+
+    <!--  Target/Action Strings -->
+    <string name="action_home">主页</string>
+    <string name="action_back">返回</string>
+    <string name="action_recents">最近打开</string>
+    <string name="action_screenshot">屏幕截图</string>
+    <string name="action_menu">菜单</string>
+    <string name="action_ime">选择输入法</string>
+    <string name="action_kill">清除程序</string>
+    <string name="action_power">电源键</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_none">空</string>
+
+    <string name="toggle_ring_vib">铃声/振动</string>
+    <string name="toggle_ring_silent">铃声/静音</string>
+    <string name="toggle_ring_vib_silent">铃声/振动/静音</string>
+    <string name="app_killed_message">进程已清除</string>
+    <string name="recents_kill_all_button_text">全部清除</string>
+
+    <!--  Quick Settings -->
+    <string name="quick_settings_vibrate_on_label">振动</string>
+    <string name="quick_settings_vibrate_off_label">振动已关闭</string>
+    <string name="quick_settings_silent_on_label">静音</string>
+    <string name="quick_settings_silent_off_label">静音已关闭</string>
+    <string name="quick_settings_fcharge_on_label">快充</string>
+    <string name="quick_settings_fcharge_off_label">快充已关闭</string>
+    <string name="quick_settings_torch_on_label">手电筒</string>
+    <string name="quick_settings_torch_off_label">手电筒已关闭</string>
+    <string name="quick_settings_nfc_on_label">NFC</string>
+    <string name="quick_settings_nfc_off_label">NFC 关</string>
+    <string name="quick_settings_wifi_tether_on_label">Wifi绑定</string>
+    <string name="quick_settings_wifi_tether_off_label">Wifi绑定已关闭</string>
+    <string name="quick_settings_bt_tether_on_label">蓝牙绑定</string>
+    <string name="quick_settings_bt_tether_off_label">蓝牙绑定已关闭</string>
+    <string name="quick_settings_usb_tether_on_label">USB绑定</string>
+    <string name="quick_settings_usb_tether_off_label">USB绑定已关闭</string>
+    <string name="quick_settings_sync_on_label">同步</string>
+    <string name="quick_settings_sync_off_label">同步已关闭</string>
+    <string name="quick_settings_twog_on_label">2G</string>
+    <string name="quick_settings_twog_off_label">2G已关闭</string>
+    <string name="quick_settings_lte_on_label">LTE</string>
+    <string name="quick_settings_lte_off_label">LTE已关闭</string>
+    <string name="quick_settings_gps_on_label">GPS</string>
+    <string name="quick_settings_gps_off_label">GPS已关闭</string>
+    <string name="quick_settings_data_on_label">数据</string>
+    <string name="quick_settings_data_off_label">数据已关闭</string>
+    <string name="quick_settings_sound_on">音效</string>
+    <string name="quick_settings_navbar_hide_on_label">隐藏导航栏</string>
+    <string name="quick_settings_navbar_hide_off_label">正常导航栏</string>
+    <string name="quick_settings_recording">录音中</string>
+    <string name="quick_settings_recordingcap">撷取记录</string>
+    <string name="quick_settings_playing">播放中...</string>
+    <string name="quick_settings_quickrecord">一键录音</string>
+    <string name="quick_settings_nofile">长按开始录音</string>
+    <string name="quick_settings_statusbar_on_label">显示状态栏</string>
+    <string name="quick_settings_statusbar_off_label">隐藏状态栏</string>
+    <string name="quick_settings_quiet_hours_on_label">免打扰模式</string>
+    <string name="quick_settings_quiet_hours_off_label">免打扰模式 OFF</string>
+    <string name="quick_settings_powermenu">电源键菜单</string>
+    <string name="quick_settings_profile">情景模式</string>
+    <string name="quick_settings_sleep">一键关屏</string>
+    <string name="quick_settings_pie_on_label">PIE</string>
+    <string name="quick_settings_pie_off_label">PIE OFF</string>
+    <string name="quick_settings_reboot">重启</string>
+    <string name="quick_settings_screenshot">截屏</string>
+    <string name="quick_settings_volume">音量</string>
+
+    <!--  RamBar -->
+    <string name="memory">内存</string>
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> 闲置</string>
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> 已使用</string>
+    <string name="service_process_name"><xliff:g id="process">%1$s</xliff:g></string>
+    <string name="service_client_name"><xliff:g id="client_name">%1$s</xliff:g></string>
+    <string name="service_started_by_app">由程序启用.</string>
+    <string name="running_processes_item_description_s_s"><xliff:g id="numprocess">%1$d</xliff:g>
+        进程及 <xliff:g id="numservices">%2$d</xliff:g> 服务</string>
+    <string name="running_processes_item_description_s_p"><xliff:g id="numprocess">%1$d</xliff:g>
+        进程及 <xliff:g id="numservices">%2$d</xliff:g> 服务</string>
+    <string name="running_processes_item_description_p_s"><xliff:g id="numprocess">%1$d</xliff:g>
+        进程及 <xliff:g id="numservices">%2$d</xliff:g> 服务</string>
+    <string name="running_processes_item_description_p_p"><xliff:g id="numprocess">%1$d</xliff:g>
+        等进程及 <xliff:g id="numservices">%2$d</xliff:g> 服务</string>
+
+    <string name="permdesc_screenshot">屏幕截图</string>
+    <string name="permlab_screenshot">允许其它程序屏幕截图，这项指令由系统UI权限保护.</string>
+    <string name="screenshot_toast">系统会在 %1$d 秒后执行屏幕截图</string>
+
+    <string name="pie_date_format">yyyy MMM dd日, ccc</string>
+</resources>

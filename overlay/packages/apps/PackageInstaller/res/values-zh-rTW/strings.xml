@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Tab label for vrsion information [CHAR LIMIT=20] -->
+	<string name="appVersion">版本資訊</string>
+
+	<!-- Body text for new tab when there are no permissions [CHAR LIMIT=NONE] -->
+	<string name="no_perms">此程序毋須取取得權限.</string>
+	<string name="currentVersion">目前版本:</string>
+	<string name="newVersion">新版本:</string>
+	<string name="not_available">暫不可用</string>
+</resources>

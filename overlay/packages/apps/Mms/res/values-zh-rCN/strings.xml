@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- CM Mod -->
+
+    <!-- CM9 MOD -->
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">简讯模板</string>
+    <string name="pref_title_templates_manage">模板</string>
+    <string name="pref_summary_templates_manage">管理您的简讯模板</string>
+    <string name="pref_title_templates_show_gesture">手势</string>
+    <string name="pref_summary_templates_show_gesture">显示手势轨迹</string>
+    <string name="pref_title_template_gestures_sensitivity">手势灵敏度</string>
+    <string name="template_save">储存</string>
+    <string name="template_insert_hint">在这里输入模板文字</string>
+    <string name="template_empty_text">文字栏位不能留白</string>
+    <string name="template_explanation">输入或修改模板文字并选择性的画一个手势来与之关联</string>
+    <string name="template_edit">编辑</string>
+    <string name="template_delete">删除</string>
+    <string name="template_ctx_menu_title">管理模板</string>
+    <string name="template_list_title">模板</string>
+    <string name="template_edit_title">编辑模板</string>
+    <string name="template_new_title">新增模板</string>
+    <string name="template_insert">插入模板</string>
+    <string name="template_insert_ctx_menu_title">编辑文字</string>
+    <string name="template_gesture_draw">在以下空间画出手势</string>
+    <string name="template_not_present_error">您尚未定义任何模板</string>
+    <string name="template_not_present_error_title">错误</string>
+    <string name="template_select">选择模板</string>
+    <string name="template_cancel_confirm_title">删除确认</string>
+    <string name="template_cancel_confirm_text">您确定要删除吗？</string>
+    <string name="gestures_already_present">警告：一个相似的手势经已关联到另一个模板！</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">震动设定</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">震动模式</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">变更震动模式</string>
+    <string name="pref_title_mms_notification_vibrate_call">通话时震动</string>
+    <string name="pref_summary_mms_notification_vibrate_call">允许在通话期间震动</string>
+    <string name="pref_title_mms_notification_vibrate_custom">自定震动模式</string>
+    <string name="pref_text_mms_notification_vibrate_custom">格式是以毫秒为单位的关闭／开启时间长度：关闭，开启，关闭，开启，……</string>
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">其他设定</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_unicode_stripping">替换Unicode码</string>
+    <string name="pref_unicode_stripping_leave_intact">保留所有字符</string>
+    <string name="pref_unicode_stripping_non_encodable">替换所有不能编码字符</string>
+    <string name="pref_unicode_stripping_all">替换所有不支持的Unicode码字符</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">完整时间戳</string>
+    <string name="pref_summary_mms_full_timestamp">显示完整日期及时间</string>
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">发送时间戳</string>
+    <string name="pref_summary_mms_use_sent_timestamp">显示发送而非接收时间戳</string>
+
+    <!-- QUICKMESSAGE SUPPORT -->
+    <!-- Preferences -->
+    <string name="pref_quickmessage">弹出式对话窗口</string>
+    <string name="pref_quickmessage_title">启用弹出式窗口</string>
+    <string name="pref_quickmessage_summary">显示简便信息弹出对话视窗</string>
+    <string name="pref_wake_unlock_title">自动解锁</string>
+    <string name="pref_wake_unlock_summary">当收到讯息时自动唤醒手机并解锁（只限没有设定密码保护锁屏有效）</string>
+    <string name="pref_close_all_title">一键关闭</string>
+    <string name="pref_close_all_summary">按下关闭键所有信息会全部关闭</string>
+    <string name="message_counter_separator">／</string>
+
+    <!-- QM Dialog box buttons -->
+    <string name="button_close">关闭</string>
+    <string name="button_view">阅读信息</string>
+    <string name="button_templates">模板</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">输入信息</string>
+
+    <!-- QM Toast -->
+    <string name="toast_sending_message">送出信息中</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">回复</string>
+	<string name="qm_mark_read">已读取</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">私隐模式</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">在状态栏提示中隐藏发信人名称并禁用弹出式对话窗口</string>
+    <string name="notification_single_title_privacy_mode">新信息</string>
+    <string name="notification_single_text_privacy_mode">1 条未读信息</string>
+    <string name="notification_multiple_title_privacy_mode">新信息</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> 未读信息</string>
+    <string name="notification_ticker_privacy_mode">您收到新信息</string>
+
+    <string name="pref_display_title">显示内容</string>
+    <!-- Settings item for boolean option to show the full datetime -->
+    <string name="pref_title_fulldate">完整日期</string>
+    <!-- Settings item description for boolean full datetime setting -->
+    <string name="pref_summary_fulldate">信息中显示完整日期标戳</string>
+
+    <string name="pref_dark_theme_title">使用深色主题</string>
+    <string name="pref_dark_theme_summary">反勾则使用默认浅色主题</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">软体键盘种类</string>
+    <string name="pref_summary_input_type">选择撰写信息时键盘种类</string>
+
+    <string name="menu_insert_emoji">插入Emoji图示</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Emoji表情符号</string>
+    <string name="pref_keyboard_send">Enter键送出</string>
+    <string name="pref_keyboard_new_line">不支援，请重新选择</string>
+
+    <string name="slideshow_options">幻灯片模式</string>
+    <string name="pref_title_mms_group_mms">群组短信</string>
+    <string name="pref_summary_mms_group_mms">支援收发群组短信</string>
+
+    <string name="pref_title_mms_auto_retrieval">自动撷取信息</string>
+    <string name="pref_summary_mms_auto_retrieval">自动撷取信息</string>
+    <string name="pref_title_mms_retrieval_during_roaming">漫游自动撷取信息</string>
+    <string name="pref_summary_mms_retrieval_during_roaming">漫游中自动撷取信息</string>
+
+    <!-- Gray hint displayed in the search field in Contacts when empty -->
+    <string name="search_bar_hint">搜寻联络人</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="select_all">全部</string>
+
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">新增联络人资讯</string>
+    <string name="cannot_find_contact">无法将选择新增到联络人中</string>
+    <string name="insert_contact_info_positive_button">新增</string>
+
+    <!-- Breathing Notifications -->
+    <string name="mms_breath">彩信闪烁提示</string>
+    <string name="mms_breath_summary">收到信息会在状态栏上显示闪动图示.</string>
+
+    <!-- Direct Call Feature -->
+    <string name="direct_call_title">感应器拨号</string>
+    <string name="direct_call_summary">将电话拿起放在耳侧即拨打当前联络人号码</string>
+
+    <!-- Message Font size
+    <string name="pref_title_mms_message_font_size">信息字体大小</string>
+    <string name="pref_summary_mms_message_font_size">改变视窗中字体大小</string>
+    <string name="pref_dialogtitle_mms_message_font_size">选择字体大小</string> -->
+
+    <!-- Custom user-agent -->
+    <string name="pref_mms_custom_option">自定义</string>
+    <string name="pref_title_mms_user_agent">自定义使用者代理</string>
+    <string name="pref_summary_mms_user_agent">假装成其他手机型号发出信息</string>
+    <string name="pref_mms_user_agent_custom_set">使用者代理设置成:\n</string>
+    <string name="default_android">系统默认</string>
+
+    <!-- Message signature -->
+    <string name="msg_sig_title">自定义署名</string>
+    <string name="msg_sig_summary">在发出信息中标示自定义署名</string>
+    <string name="msg_sig_enter_text">输入文字内容</string>
+
+    <!-- Failed to Attach Recorded Audio (SoundRecorder not found) -->
+    <string name="record_sound_error_alert">录音机程序不存，无法新增音频附件!</string>
+
+    <!-- Start of adding custom theme'n aspects to Mms
+         Much thanks to @DroidJunk (jimmy miller) for the guide -->
+    <!-- MMS THEME SETTINGS -->
+    <string name="mms_themes">Mms 主题设定</string>
+    <string name="themes_summary">改变信息软件外观</string>
+    <string name="themes_conv_list_title">信息列风格</string>
+    <string name="themes_conv_list_summary">改变信息列风格，设定文字内容颜色</string>
+    <string name="themes_msg_list_title">对话视窗风格</string>
+    <string name="themes_msg_list_summary">改变对话视窗风格，设定文字内容颜色</string>
+    <string name="themes_widget_title">小工具主题</string>
+    <string name="themes_widget_summary">桌面小工具套用深／浅色风格, 设定文字内容颜色</string>
+    <string name="background_colors">背景</string>
+    <string name="restore_defaults">还原系统默认设定</string>
+    <string name="delete_custom_image">删除背景图片</string>
+    <string name="custom_image_title">自定义图片</string>
+    <string name="custom_image_summary">套用自定义图片到背景</string>
+    <string name="restart_mms_title">重启程序</string>
+    <string name="restart_mms_summary">设定如自定义图片需要重启程序才可以套用 **桌面小部件主题改变后亦需要重新加入才能套用更新</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">调色盘</string>
+    <string name="press_color_to_apply">点击颜色套用更新</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="ics_color">Holo</string>
+    <!-- Themes preference categorys -->
+    <string name="main_bg">主页面背景</string>
+    <string name="recv_text_header">收到信息文字</string>
+    <string name="sent_text_header">输入文字</string>
+    <string name="show_contact_avatar">显示联络人头像</string>
+    <string name="text_conv_layout">对话内容布局风格</string>
+    <string name="contact_font_size_title">联络人名称字体大小</string>
+    <string name="font_size_title">信息文字大小</string>
+    <string name="date_font_size_title">日期文字大小</string>
+    <string name="conversation_list_unread">未读取信息</string>
+    <string name="conversation_list_read">已读取信息</string>
+    <!-- conv list read/unread -->
+    <string name="unread_bg">未读取背景</string>
+    <string name="unread_contact">未读取联络人</string>
+    <string name="unread_subject">未读取主题</string>
+    <string name="unread_date">未读取日期</string>
+    <string name="unread_count">未读取信息计数</string>
+    <string name="unread_smiley">未读取表情符号</string>
+    <string name="read_bg">已读取背景</string>
+    <string name="read_contact">已读取联络人</string>
+    <string name="read_subject">已读取主题</string>
+    <string name="read_date">已读取日期</string>
+    <string name="read_count">已读取信息计数</string>
+    <string name="read_smiley">已读取表情符号</string>
+    <!-- bubbles -->
+    <string name="text_bubble_title">设定气泡样式</string>
+    <string name="bubble_fill_parent_title">气泡填满屏幕宽度</string>
+    <string name="bubble">套用气泡</string>
+    <string name="bubble_none">没有气泡</string>
+    <string name="hc_bubble">气泡箭头向下</string>
+    <string name="circle_bubble">气泡箭头两侧</string>
+    <string name="frame_arrow">信息框带箭头及框线</string>
+    <string name="frame_outer_only">信息框线连背景</string>
+    <string name="frame">仅信息框</string>
+    <!-- Contact use -->
+    <string name="show_contact_name">显示联络人名称</string>
+    <!-- Sent colors -->
+    <string name="sent_textcolor">送出文字</string>
+    <string name="sent_smiley">送出表情符号</string>
+    <string name="sent_datecolor">送出日期</string>
+    <string name="sent_contact_color">送出联络人</string>
+    <string name="sent_text_bg">送出背景</string>
+    <!-- Recv colors -->
+    <string name="recv_textcolor">接收文字</string>
+    <string name="recv_smiley">接收表情符号</string>
+    <string name="recv_datecolor">接收日期</string>
+    <string name="recv_contact_color">接收联络人</string>
+    <string name="recv_text_bg">接收背景</string>
+    <!-- Conversation layout styles -->
+    <string name="layout_default">默认布局</string>
+    <string name="layout_from_left">左方开始</string>
+    <string name="layout_from_right">右方开始</string>
+    <!-- add signature -->
+    <string name="add_signature_title">新增信息署名</string>
+    <string name="add_signature_summary">信息加入自定义信息署名</string>
+    <string name="enter_text">输入文字</string>
+    <!-- widgets -->
+    <string name="widget_layout_dark">深色</string>
+    <string name="widget_layout_light">浅色</string>
+    <string name="widget_layout">小部件风格</string>
+    <string name="widget_read">已读取颜色</string>
+    <string name="widget_unread">未读取颜色</string>
+    <string name="widget_senders_textcolor_read">已读取发送人</string>
+    <string name="widget_senders_textcolor_unread">未读取发送人</string>
+    <string name="widget_subject_textcolor_read">已读取主题</string>
+    <string name="widget_subject_textcolor_unread">未读取主题</string>
+    <string name="widget_date_textcolor_read">已读取日期</string>
+    <string name="widget_date_textcolor_unread">未读取日期</string>
+
+    <!-- Settings item for SMS Split 160 characters setting -->
+    <string name="pref_title_sms_split_160">彩信自动分割</string>
+    <string name="pref_summary_sms_split_160">每160个字元即分割成新信息</string>
+    <string name="pref_title_sms_split_counter">分割读数</string>
+    <string name="pref_summary_sms_split_counter">新增分割读数到文本 例如： (1/2)</string>
+
+    <!-- Multipart SMS -->
+    <string name="pref_title_sms_EnableMultipartSMS">"短信转换彩信"</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">"把长的文本信息转换成彩信"</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">"彩信读数"</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">转换成彩信前总共有"<xliff:g id="COUNT">%1$s</xliff:g> 文字信息"</string>
+
+    <!-- Setting item for folder to save MMS Attachments to -->
+    <string name="pref_title_save_location">指定附件储存路径</string>
+    <string name="pref_title_save_location_summary">指定储存附件的文件夹</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">表情符号支援</string>
+    <string name="pref_summary_enable_emojis">启用表情符号支援（包含471个表情符号）</string>
+
+    <!-- Quick smiley title -->
+    <string name="quick_smiley_title">选择表情符号</string> 
+    <string name="pref_title_quick_smiley_btn">表情符号快捷输入键</string>
+    <string name="pref_summary_quick_smiley_btn">输入栏旁边新增表情符号输入键</string>
+
+    <string name="font_size_default">16dp (默认)</string>
+    <string name="menu_mark_all_read">全部标示为已读取</string>
+
+    <!-- Avatar -->
+    <string name="hide_avatar">隐藏联络人头像</string>
+    <string name="hide_avatar_summary">对话页面隐藏联络人头像</string>
+</resources>

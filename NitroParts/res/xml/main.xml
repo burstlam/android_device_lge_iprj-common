@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- defaultValues need to be in sync with the default kernel values! -->
+
+	<PreferenceCategory
+    	android:title="@string/category_vibrator_intensity_title">
+	    <ListPreference
+	        android:key="vibrator_intensity"
+	        android:title="@string/vibrator_intensity_title_head"
+	        android:summary="@string/vibrator_intensity_summary_head"
+	        android:entries="@array/vibrator_intensity_entries"
+	        android:entryValues="@array/vibrator_intensity_values"
+	        android:defaultValue="100" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+    	android:title="@string/category_sdcard_cache_title">
+	    <ListPreference
+	        android:key="sdcard_cache"
+	        android:title="@string/sdcard_cache_title_head"
+	        android:summary="@string/sdcard_cache_summary_head"
+	        android:entries="@array/sdcard_cache_entries"
+	        android:entryValues="@array/sdcard_cache_values"
+	        android:defaultValue="256" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+    	android:title="@string/category_usb_title">
+	    <CheckBoxPreference
+	        android:key="fastcharge"
+	        android:title="@string/fastcharge_title_head"
+	        android:summary="@string/fastcharge_summary_head"
+	        android:defaultValue="0" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	android:title="@string/category_backlightdisable_title">
+	    <CheckBoxPreference
+	        android:key="backlight_disable"
+	        android:title="@string/backlightdisable_title_head"
+	        android:summary="@string/backlightdisable_summary_head"
+	        android:defaultValue="0" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	android:title="@string/category_wifi_pm_title">
+	    <CheckBoxPreference
+	        android:key="wifi_pm"
+	        android:title="@string/wifi_pm_title_head"
+	        android:summary="@string/wifi_pm_summary_head"
+	        android:defaultValue="N" />
+	</PreferenceCategory>
+
+    <PreferenceScreen
+            android:title="@string/category_linux_cache_title"
+            android:summary="@string/category_linux_cache_summary_none" >
+	<PreferenceCategory
+    	android:title="@string/category_linux_cache_title">
+	    <ListPreference
+	        android:key="dw_centisecs"
+	        android:title="@string/dw_centisecs_title_head"
+	        android:summary="@string/dw_centisecs_summary_head"
+	        android:entries="@array/dw_centisecs_entries"
+	        android:entryValues="@array/dw_centisecs_values"
+	        android:defaultValue="500" />
+	    <ListPreference
+	        android:key="de_centisecs"
+	        android:title="@string/de_centisecs_title_head"
+	        android:summary="@string/de_centisecs_summary_head"
+	        android:entries="@array/de_centisecs_entries"
+	        android:entryValues="@array/de_centisecs_values"
+	        android:defaultValue="200" />
+	    <ListPreference
+	        android:key="db_ratio"
+	        android:title="@string/db_ratio_title_head"
+	        android:summary="@string/db_ratio_summary_head"
+	        android:entries="@array/db_ratio_entries"
+	        android:entryValues="@array/db_ratio_values"
+	        android:defaultValue="5" />
+	    <ListPreference
+	        android:key="d_ratio"
+	        android:title="@string/d_ratio_title_head"
+	        android:summary="@string/d_ratio_summary_head"
+	        android:entries="@array/d_ratio_entries"
+	        android:entryValues="@array/d_ratio_values"
+	        android:defaultValue="20" />
+	    <ListPreference
+	        android:key="vfs_cache_pressure"
+	        android:title="@string/vfs_cache_pressure_title_head"
+	        android:summary="@string/vfs_cache_pressure_summary_head"
+	        android:entries="@array/vfs_cache_pressure_entries"
+	        android:entryValues="@array/vfs_cache_pressure_values"
+	        android:defaultValue="100" />
+	</PreferenceCategory>
+    </PreferenceScreen>
+
+</PreferenceScreen>

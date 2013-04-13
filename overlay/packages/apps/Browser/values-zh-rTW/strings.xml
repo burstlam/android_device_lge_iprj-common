@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Title for tab settings preference -->
+    <string name="tab_settings_title">分頁</string>
+    <!-- Dialog title -->
+    <string name="pref_max_open_tabs">最大分頁數</string>
+    <!-- Summary for Maximum open tabs -->
+    <string name="pref_max_open_tabs_summary">
+        設定瀏覽器可以打開最大的分頁數</string>
+    <!-- Title for Restore tabs -->
+    <string name="pref_restore_tabs">打開上次分頁</string>
+    <!-- Summary for Restore tabs -->
+    <string name="pref_restore_tabs_summary">開啟瀏覽器時還原上次打開分頁, 不論重啟或結束程序</string>
+
+    <!-- Settings button label that to pick what to set the homepage to [CHAR LIMIT=40] -->
+    <string name="pref_content_uastring">使用者代理</string>
+    <string name="pref_content_uastring_summary">選擇您希望取得的頁面風格代理</string>
+    <string-array name="pref_content_ua_choices" translatable="false">
+        <item>Android</item>
+        <item>桌面</item>
+        <item>iPhone</item>
+        <item>iPad</item>
+        <item>Froyo-N1</item>
+        <item>Honeycomb-Xoom</item>
+    </string-array>
+
+</resources>
