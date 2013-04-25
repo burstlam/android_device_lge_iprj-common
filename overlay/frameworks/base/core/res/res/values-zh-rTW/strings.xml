@@ -21,6 +21,13 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- When the lock screen is showing and the battery is low, warn user to plug
+         in the phone soon. -->
+    <string name="lockscreen_low_battery">請連接充電器.</string>
+    <!-- Showing the Battery % while not plugged in. -->
+    <string name="lockscreen_always_battery">放電中, 剩餘:<xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+    <string name="lockscreen_always_low_battery">連接充電器,已完成: <xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+
     <!-- Reboot -->
     <string name="reboot">重新啟動</string>
 
@@ -98,4 +105,8 @@
     <string name="action_alarm">鬧鐘</string>
     <string name="action_null">空白</string>
     <string name="action_app">自定義</string>
+    <string name="action_unlock">解鎖</string>
+    <string name="action_camera">相機</string>
+    <string name="action_widgets">導航欄工具</string>
+    <string name="action_ribbon">AOKP彩帶</string>
 </resources>

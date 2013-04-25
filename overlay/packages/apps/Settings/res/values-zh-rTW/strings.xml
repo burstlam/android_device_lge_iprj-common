@@ -99,14 +99,13 @@
     <!-- Automatic brightness customization -->
     <string name="light_sensor_current_value">光線感應器取值: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">自動亮度水平調節</string>
-    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> lux</string>
-    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
     <string name="auto_brightness_adjust_button">調節</string>
+    <string name="auto_brightness_close_button">關閉</string>
     <string name="auto_brightness_reset_button">重置</string>
     <string name="auto_brightness_lux_dialog_title">亮度水平設置</string>
     <string name="auto_brightness_split_dialog_title">新增亮度水平</string>
-    <string name="auto_brightness_start_lux">初始 (lux)</string>
-    <string name="auto_brightness_end_lux">結束 (lux)</string>
+    <string name="auto_brightness_level_dialog_title">設置亮度水平</string>
+    <string name="auto_brightness_lux">環境亮度 (lux)</string>
     <string name="auto_brightness_reset_dialog_title">還原系統默認值?</string>
     <string name="auto_brightness_reset_confirmation">所有亮度水平將會重置成系統默認值.</string>
 
@@ -115,6 +114,24 @@
     <string name="auto_brightness_menu_edit_lux">編輯光線感應器取值</string>
     <string name="auto_brightness_menu_split">新增水平</string>
     <string name="auto_brightness_menu_remove">移除</string>
+    <string name="auto_brightness_preview">預覽</string>
+    <string name="auto_brightness_preview_dialog_title">亮度曲線預覽</string>
+    <string name="auto_brightness_help_dialog_title">說明</string>
+    <string name="auto_brightness_help_text"><b>亮度是如何計算出來的？</b>
+\n\n
+通過對<i>控制點/取樣點</i> 執行<i>三次取樣插值</i>計算出亮度曲線. 這種方法有別於 \'一籃子\' 計算方法,把屏幕亮度在特定周圍環境的亮度保持下來.
+這樣周圍環境的亮度輕微改變不會大幅度改變屏幕亮度,但是這種方式不便於系統計算環境亮度帶來控制點的具體形响.
+\n為此亮度曲線預覽可以帶來一點方便. 請注意預覽只是以<i>對數</i>比例顯示,突顯出所有控制點數據.
+當改用直線比例顯示將很難顯示低亮環境的控制點數據.
+\n\n
+<b>怎樣編輯編輯光線感應器取值?</b>
+\n\n
+亮度水平對應亮度曲線每個 <i>控制點</i>. 要編輯亮度可使用滑動條改變數值,
+屏幕亮度會根據滑動改變 .\n
+長按亮度欄後點選\'調節\'可以同時編輯環境亮度的控制點取樣值並手動輸入調節的屏幕亮度.
+點選 \'新增水平\' 複制一個亮度水平欄. \'移除\' 則可刪除一行亮度數值.
+    </string>
+
 
     <!-- Hardware Info -->
     <string name="hardware_info">硬件資訊</string>
@@ -403,7 +420,7 @@
     <string name="swap_volume_buttons_title">音量鍵互換</string>
     <string name="swap_volume_buttons_summary">屏幕橫向時互換音量鍵功能</string>
 
-    <!-- Whether to display IME switcher notifcation -->
+    <!-- Whether to display IME switcher notifcation-->
     <string name="ime_switcher_notify">輸入法圖示</string>
     <string name="ime_switcher_notify_summary">於狀態欄顯示輪入法圖示</string>
 
@@ -425,7 +442,16 @@
     <string name="power_notifications_enable_title">使用電源連接提示音</string>
     <!-- Sound settings, power notifications ringtone selection, preference label -->
     <string name="power_notifications_ringtone_title">通知音</string>
+    <string name="power_notifications_vibrate_title">振動</string>
     <!-- Sound settings, power notifications label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">靜音</string>
 
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">開機媒體掃描</string>
+    <string name="media_scanner_on_boot_enabled">執行掃描</string>
+    <string name="media_scanner_on_boot_ask">提示確認</string>
+    <string name="media_scanner_on_boot_disabled">不執行掃描</string>
+
+    <!-- Permissions Management -->
+    <string name="permissions_settings_title">授權管理</string>
 </resources>

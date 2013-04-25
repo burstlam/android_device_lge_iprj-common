@@ -62,8 +62,9 @@
     <string name="title_show_navbar_hide">顯示導航欄控制台開關</string>
     <string name="power_menu_expanded_desktop">全屏模式開關</string>
 	<string name="title_show_reboot_keyguard">鎖屏中顯示重啟開關</string>
-    <string name="summary_off_show_reboot_keyguard">鎖屏中不會顯示重啟菜單</string>
-    <string name="summary_on_show_reboot_keyguard">鎖屏中顯示重啟菜單</string>
+    <string name="summary_show_reboot_keyguard">鎖屏中顯示重啟菜單</string>
+<!--    <string name="summary_off_show_reboot_keyguard">鎖屏中不會顯示重啟菜單</string>
+    <string name="summary_on_show_reboot_keyguard">鎖屏中顯示重啟菜單</string>-->
     <string name="title_show_volume_state_toggle">顯示音效面板</string>
 
     <!-- Power Saving -->
@@ -151,13 +152,13 @@
     <string name="notification_show_wifi_ssid_summary">顯示目前使用中的WIFI網路名稱</string>
 
     <!-- LCD Density -->
-    <string name="lcd_density_title">調整 LCD 屏幕解析度</string>
-    <string name="lcd_density_summary">未知</string>
+    <string name="lcd_density_title">變更系統UI解析度</string>
+    <string name="lcd_density_summary">設定鎖屏/狀態欄/啟動菜單等系系統使用者介面的解析度</string>
     <string name="current_lcd_density">"目前 LCD 屏幕解析度: "</string>
     <string name="lcd_density_wizard">設定精靈</string>
     <string name="follow_through_title">指南!</string>
     <string name="follow_through_summary">小心按照下列步驟進行.</string>
-    <string name="stock_density_title">1. 還原默認解柝度</string>
+    <string name="stock_density_title">1. 還原默認解析度</string>
     <string name="stock_density_summary">平板或舊款手機數值為160. 大部份手機使用 240. Galaxy Nexus 使用 320 為默認值.</string>
     <string name="stock_density_changed_summary">"解析度設定為: "</string>
     <string name="reboot_title">2. 重啟!</string>
@@ -168,14 +169,15 @@
     <string name="open_market_title">4. 打開 GOOGLE PLAY 程式並按接受</string>
     <string name="open_market_summary">完成後返回此頁.</string>
     <string name="open_market_summary_could_not_open">"無法打開 GOOGLE PLAY 程式，請確認已安裝程式後手動點擊進入程式."</string>
-    <string name="custom_density_title">5. 設定您喜愛的解析度!</string>
-    <string name="custom_density_summary">若遇上 GOOGLE PLAY 兼容問題，請返回此頁重新設定.</string>
+    <string name="apps_dpi_title2">5.設定全局程序解析度</string>
+    <string name="custom_density_title">6. 設定您喜愛的系統UI解析度!</string>
+    <string name="custom_density_summary">若遇上 GOOGLE PLAY 兼容問題，可使用DPI分組功能把GOOGLE PLAY加入原來系統解析度.</string>
     <string name="custom_density_summary_invalid">"解析度無效!"</string>
     <string name="custom_density">自定義</string>
     <string name="set_custom_density_title">設定自定義解析度</string>
     <string name="set_custom_density_set">應用</string>
     <string name="custom_density_dialog_title">"警告!"</string>
-    <string name="custom_density_dialog_summary">"更改解析度可能引起無法預見的問題，若遇上此情況，請重新進入此頁重新由步驟1執行"</string>
+    <string name="custom_density_dialog_summary">"請注意!系統UI解析度不等於全局程序使用的解析度.\n另外,更改解析度可能引起無法預見的問題，若遇上此情況，請利用DPI分組功能把不協調的程序加入原生系統的解析度組別"</string>
     <string name="custom_density_dialog_button_got">明白!</string>
     <string name="custom_density_dialog_button_reboot">立即重啟</string>
 
@@ -535,7 +537,7 @@
     <string name="lockscreen_stock_music_layout_summary">播放音樂時，使用原生系統操作界面.</string>
     <string name="lockscreen_wallpaper_title">選擇鎖屏壁紙</string>
     <string name="lockscreen_wallpaper_summary">您可以通過本頁的菜單將鎖屏壁紙移除</string>
-    <string name="lockscreen_text_color_title">鎖屏文字顏示</string>
+    <string name="lockscreen_text_color_title">鎖屏文字顏色</string>
     <string name="lockscreen_weather_title">顯示</string>
     <string name="lockscreen_weather_summary">於鎖屏中顯示天氣資訊,但必須先啟用ROMCONTROL的天氣服務</string>
     <string name="lockscreen_weather_type_title">鎖屏天氣樣式</string>
@@ -557,7 +559,7 @@
     <string name="lockscreen_calendar_interval_title">翻頁間隔</string>
     <string name="lockscreen_calendar_interval_summary">選擇動畫速度.</string>
 
-    <!-- Lockscreen Targets-->
+    <!-- Lockscreen Targets
     <string name="custom_targets">自定義鎖屏目標</string>
     <string name="lockscreen_target_info">將游標拖曳到空白捷徑上設定新目標</string>
     <string name="lockscreen_target_title">自定義目標</string>
@@ -682,7 +684,7 @@
     <string name="aokp_4targets">4 目標</string>
     <string name="aokp_5targets">5 目標</string>
     <string name="aokp_6targets">6 目標</string>
-    <string name="aokp_8targets">8 目標</string>
+    <string name="aokp_8targets">8 目標</string>-->
 
     <!-- Weather 天氣 -->
     <string name="weather_enable">啟用天氣</string>
@@ -1103,8 +1105,13 @@
     <string name="brightness_slider_summary">在狀態欄上滑動調校屏幕亮度</string> -->
     <string name="status_bar_max_notifications_title">狀態欄通知圖示最大數</string>
     <string name="status_bar_max_notifications_summary">此修改只對竪屏的平板模式有效</string>
-    <string name="statusbar_hide_title">隱藏狀態欄</string>
+<!--    <string name="statusbar_hide_title">隱藏狀態欄</string>
     <string name="statusbar_hide_summary">容許完全隱藏狀態欄顯示</string>
+    <string name="notification_exshade_title">通知欄強制顯示</string>
+    <string name="notification_exshade_summary">全屏模式下仍然顯示通知欄</string>-->
+
+    <string name="statusbar_autohide_title">狀態欄自動隱藏</string>
+    <string name="statusbar_autohide_summary">沒有通知提示時候自動隱藏狀態欄</string>
 
     <!-- Status bar background style
     <string name="status_bar_transparency_title">狀態欄透明度</string>
@@ -1196,8 +1203,8 @@
     <string name="lockscreen_maximize_widgets_summary">設置後鎖屏畫面的安全鎖(密碼,圖形及PIN)要點擊解鎖圖案才會出現</string>
     <string name="lockscreen_use_widget_container_carousel_title">使用旋轉動畫</string>
     <string name="lockscreen_use_widget_container_carousel_summary">替換小工具頁面時使用旋轉動畫.</string>
-    <string name="lockscreen_longpress_challenge_title">長按解鎖圖案動作</string>
-    <string name="lockscreen_longpress_challenge_summary">鎖屏小工具最大化時,長按解鎖圖案可直接解鎖.</string>
+<!--    <string name="lockscreen_longpress_challenge_title">長按解鎖圖案動作</string>
+    <string name="lockscreen_longpress_challenge_summary">鎖屏小工具最大化時,長按解鎖圖案可直接解鎖.</string>-->
     <string name="lockscreen_camera_widget_title">啟用相機小工具</string>
     <string name="lockscreen_camera_widget_summary">鎖屏增加相機小工具</string>
 
@@ -1215,7 +1222,7 @@
     <string name="pref_lockscreen_transparent">鎖屏透明</string>
     <!--    <string name="lockscreen_seethrough">鎖屏透明</string> -->
 
-    <!-- ParanoidAndroid: Lockscreen Shortcuts -->
+    <!-- ParanoidAndroid: Lockscreen Shortcuts
     <string name="ls_shortcuts_title">鎖屏捷徑</string>
     <string name="icon_picker_type">選擇圖示包:</string>
     <string name="icon_default">默認</string>
@@ -1228,7 +1235,7 @@
     <string name="lock_screen_shortcuts_summary">檢視或更改鎖屏捷徑</string>
     <string name="lock_screen_shortcuts_add">@string/profile_add_app</string>
     <string name="lock_screen_shortcuts_reset">重置</string>
-    <string name="lock_screen_shortcuts_limit">最多可設定6個捷徑!</string>
+    <string name="lock_screen_shortcuts_limit">最多可設定6個捷徑!</string> -->
     <!-- Add application dialog box title -->
     <string name="choose_app">選擇程序</string>
     <string name="profile_applist_title">程式</string>
@@ -1240,7 +1247,6 @@
     <string name="pie_gravity_summary">選擇PIE面版出現位置</string>
     <string name="pie_gravity_top">上</string>
     <string name="pie_gravity_bottom">下</string>
-<!--    <string name="pie_gravity_both">左右兩側</string>-->
     <string name="pie_gravity_left">左</string>
     <string name="pie_gravity_right">右</string>
     <string name="pie_mode_title">PIE布局及動畫</string>
@@ -1275,8 +1281,9 @@
     <string name="all_color">自設定顏色</string>
     <string name="stock_color">系統默認配色</string>
     <string name="pie_juice_title">電量顏色</string>
+    <!--<string name="pie_button_color_title">按鍵顏色</string>-->
 
-    <!-- Pie Gap-->
+    <!-- Pie Gap -->
     <string name="pie_gap_title">PIE 間隔</string>
     <string name="pie_gap_summary">調校各按鍵之間距離</string>
     <string name="pie_gap_closed">關閉</string>
@@ -1317,7 +1324,8 @@
 -->
 
     <!-- Per Apps UI Mode-->
-    <string name="appsuimode_title">全局UI設定</string>
+    <string name="appsuimode_title">全局UI布局模式</string>
+    <string name="appsuimode_summary">全局套用變更所有程序UI布局,可切換成:手機,平板手機及平板任何一種模式</string>
     <string name="apps_dpi_title">全局DPI解像度設定</string>
     <string name="apps_dpi_summary">目前:</string>
     <string name="apps_dpi_custom_title">指定:</string>
@@ -1371,11 +1379,15 @@
     <!--Expanded Desktop Enhancement: Status Bar Switch -->
     <string name="expanded_desktop_status_bar_state">全屏模式狀態欄調校</string>
     <string name="summary_expanded_desktop">%1$s</string>
-    <string name="expanded_desktop_summary_status_bar">顯示狀態欄</string>
+    <string name="expanded_desktop_summary">變更全屏模式模式</string>
+    <string name="expanded_desktop_disabled">關閉</string>
+    <string name="expanded_desktop_only_nav_bar">隱藏導航欄</string>
+    <string name="expanded_desktop_only_status_bar">隱藏狀態欄</string>
+    <string name="expanded_desktop_both_hidden">全部隱藏</string>
+<!--    <string name="expanded_desktop_summary_status_bar">顯示狀態欄</string>
     <string name="expanded_desktop_summary_no_status_bar">隱藏狀態欄</string>
-    <!-- <string name="expanded_desktop_disabled">關閉</string> -->
     <string name="expanded_desktop_staus_bar">顯示狀態欄</string>
-    <string name="expanded_desktop_no_staus_bar">隱藏狀態欄</string>
+    <string name="expanded_desktop_no_staus_bar">隱藏狀態欄</string>-->
 
    <!-- CRT_ANIMATION-->
     <string name="system_power_crt_screen_off_title">CRT 關屏動畫</string>
@@ -1588,5 +1600,154 @@
     <!-- show network speed -->
     <string name="show_network_speed_title">顯示目前網速</string>
     <string name="show_network_speed_summary">在狀態欄察看目前網速</string>
-    <string name="status_bar_traffic_color_title">自定義網速顯示顏色</string>    <string name="status_bar_traffic_color_title">自定義網速顯示顏色</string>
+    <string name="status_bar_traffic_color_title">自定義網速顯示顏色</string>    
+    <string name="status_bar_traffic_color_title">自定義網速顯示顏色</string>
+
+    <!-- Quick/Pie Control
+    <string name="pie_control_title">PIE面版</string>
+    <string name="pie_control_dialog_title">PIE虛擬鍵</string>
+    <string name="pie_control_always">不設限制啟用</string>
+    <string name="pie_control_expanded">只有全屏模式時自動啟用</string>
+    <string name="pie_control_disabled">關閉</string>
+    <string name="pie_control_size">面板大小</string>
+    <string name="pie_control_trigger_positions">觸發側設定</string>
+    <string name="pie_control_trigger_left">屏幕左側邊框</string>
+    <string name="pie_control_trigger_bottom">屏幕底部邊框</string>
+    <string name="pie_control_trigger_right">屏幕右側邊框</string>
+    <string name="pie_control_trigger_top">屏幕頂部邊框</string>
+    <string name="pie_control_trigger_top_summary">頂部只會顯示虛擬鍵,不會顯示信息面板</string>
+    <string name="pie_button_style">按鍵樣式</string>
+    <string name="pie_button_color_title">按鍵顏色</string>
+    <string name="pie_button_alpha_title">按鍵透明度</string>
+    <string name="pie_button_outline_color_title">按鍵框線顏色</string>
+    <string name="pie_button_pressed_color_title">按下按鍵顏色</string>
+    <string name="pie_button_long_pressed_color_title">長按按鍵顏色</string>
+    <string name="pie_button_pressed_alpha_title">按下按鍵顏色透明度</string>
+    <string name="pie_icon_style">按鍵圖示風格</string>
+    <string name="pie_icon_color_title">按鍵圖示顏色</string>
+    <string name="pie_icon_color_mode_title">按鍵色彩模式</string>
+    <string name="pie_icon_color_mode_dialog_title">彩色化</string>
+    <string name="pie_icon_color_mode_summary">改變按鍵著色</string>
+    <string name="pie_icon_color_mode_all_icons">全部圖示</string>
+    <string name="pie_icon_color_mode_system_icons">系統圖示</string>
+    <string name="pie_icon_color_mode_system_custom_icons">所有系統及自定圖示</string>
+    <string name="pie_trigger_size_title">觸發區域寬度</string>
+    <string name="pie_trigger">觸發區域設定</string>
+    <string name="pie_trigger_note_title">注意事項</string>
+    <string name="pie_trigger_note_summary">為避色跟狀態欄及導航欄互相干擾, 觸發區域會根據重叠的邊緣範圍自動調整</string>
+    <string name="pie_disable_ime_triggers_title">使用鍵盤時關閉或調節觸發區域</string>
+    <string name="pie_disable_ime_triggers_summary">使用軟鍵盤時,自動關閉或調節鍵盤位置的觸發區域</string>
+    <string name="pie_background_color_title">背景顏色</string>
+    <string name="pie_snap_color_title">捕捉點顏色</string>
+    <string name="pie_text_color_title">文字顏色</string>
+    <string name="pie_background_alpha_title">背景透明度</string>
+    <string name="pie_style">樣式和尺寸</string>
+    <string name="pie_style_title">樣式</string>
+    <string name="pie_dimens_title">尺寸</string>
+    <string name="pie_default">默認</string>
+    <string name="pie_additional_options">其他選項</string>
+    <string name="pie_show_snap_title">顯示捕捉點</string>
+    <string name="pie_show_snap_summary">顯示捕捉點以便自由拖動轉換</string>
+    <string name="pie_show_text_title">顯示狀態信息面板</string>
+    <string name="pie_show_text_summary">顯示訊號,日期及時間狀態</string>
+    <string name="pie_disable_statusbar_info_title">隱藏狀態信息面板</string>
+    <string name="pie_disable_statusbar_info_summary">隱藏重覆的狀態欄信息</string>
+    <string name="pie_show_background_title">顯示背景</string>
+    <string name="pie_show_background_summary">顯示PIE按鍵背景</string>
+    <string name="menu_pie_style_reset">重置樣式</string>
+    <string name="menu_pie_button_style_reset">重置按鍵樣式</string>
+    <string name="menu_pie_button_reset">重置按鍵</string>
+    <string name="pie_qty_title">按鍵數目</string>
+    <string name="pie_qty_summary">改變此項將重置所有按鍵設定</string>
+    <string name="pie_action_title">%1$s 按鍵動作 &amp; 圖示</string>
+    <string name="pie_longpress_title"> %1$s 按鍵長按動作</string>
+    <string name="pie_enable_long">啟用按鍵長按設定</string>
+    <string name="pie_button">按鍵布局設定</string>
+    <string name="pie_button_cat">按鍵布局設定</string>
+    <string name="pie_action_custom_app">自定程式</string>
+    <string name="pie_action_home">主頁</string>
+    <string name="pie_action_back">返回</string>
+    <string name="pie_action_recents">最近任務</string>
+    <string name="pie_action_lastapp">上一個任務</string>
+    <string name="pie_action_search">搜尋</string>
+    <string name="pie_action_screenshot">截屏</string>
+    <string name="pie_action_menu">菜單</string>
+    <string name="pie_action_ime">切換輸入法</string>
+    <string name="pie_action_kill">清除任務</string>
+    <string name="pie_action_power">關閉屏幕</string>
+    <string name="pie_action_notifications">通知欄</string>
+    <string name="pie_action_none">空</string>
+    <string name="color_default">默認</string> -->
+
+    <!-- AOKP Lockscreen-->
+    <string name="ls_shortcuts_title">鎖屏捷徑</string>
+
+    <string name="lockscreen_targets_title">鎖屏目標</string>
+    <string name="lockscreen_targets_summary">鎖屏目標概覽…</string>
+    <string name="lockscreen_target_longpress_text">長按功能</string>
+    <string name="lockscreen_target_longpress_summary">為鎖屏捷徑長按功能</string>
+    <string name="lockscreen_camera">相機</string>
+    <string name="lockscreen_unlock">解鎖</string>
+    <string name="save_error">無法儲存設定, 最低限度需要設定一個解鎖目標!</string>
+    <string name="icon_picker_pack_title">圖示包</string>
+    <string name="lockscreen_target_empty">空</string>
+    <string name="profile_reset_title">重置</string>
+    <string name="wifi_save">儲存</string>
+    <string name="lockscreen_target_info">將游標拖曳到空白捷徑上設定新目標</string>
+    <string name="lockscreen_options_info">點擊文字顯示簡單說明</string>
+    <string name="lockscreen_target_reset">還原鎖屏捷徑選擇</string>
+    <string name="lockscreen_target_reset_title">重置</string>
+    <string name="lockscreen_target_reset_message">刪除所有儲存選擇並還原到系統預設?</string>
+    <string name="lockscreen_target_save">儲存鎖屏捷徑選擇</string>
+    <string name="lockscreen_target_save_error_title">錯誤！無法儲存</string>
+    <string name="lockscreen_target_save_error_msg">您必須至少設定一個能解除鎖屏狀態的捷徑!</string>
+    <string name="lockscreen_target_edit_title">編輯目標及圖示</string>
+    <string name="lockscreen_target_edit_msg">選擇及更改自定義程序或活動並聯系啟動圖示</string>
+
+    <!-- AOKP Ribbon-->
+    <string name="title_ribbon">彩帶捷徑</string> 
+    <string name="ribbon_settings_title">彩帶捷徑選項</string>
+    <string name="menu_ribbon_reset">重置</string>
+    <string name="aokp_ribbon">隱藏式捷徑</string>
+    <string name="nav_widgets">導航欄小工具</string>
+    
+   <!-- Ribbon -->
+    <string name="ribbon_instructions">點擊圖示新增或刪除動作</string>
+    <string name="ribbon_targets_cat">彩帶捷徑條設定</string>
+    <string name="enable_ribbon_text_title">顯示捷徑名稱</string>
+    <string name="enable_ribbon_vibrate_title">觸發區振動回饋</string>
+    <string name="enable_ribbon_text_summary">圖示下方顯示捷徑名稱</string>
+    <string name="ribbon_icon_size_title">捷徑圖示大小</string>
+    <string name="ribbon_icon_size_summary">設定捷徑圖示的大小</string>
+    <string name="ribbon_lockscreen">鎖屏捷徑</string>
+    <string name="ribbon_notifications">通知欄捷徑</string>
+    <string name="ribbon_quicksettings">快捷開關(磁貼模式)捷徑</string>
+    <string name="ribbon_swipe">隱藏式滑動捷徑</string>
+    <string name="clone_title">選定將要複制捷徑</string>
+    <string name="icon_size_normal">正常</string>
+    <string name="icon_size_20">中等</string>
+    <string name="icon_size_15">小</string>
+    <string name="ribbon_left_enable_title">左側滑動</string>
+    <string name="ribbon_right_enable_title">右側滑動</string>
+    <string name="ribbon_bottom_enable_title">下方滑動</string>
+    <string name="ribbon_bottom_warning_title">使用導航欄無法使用下方滑動.</string>
+    <string name="ribbon_color_title">滑動捷徑著色</string>
+    <string name="text_color_title">捷徑文字顏色</string>
+    <string name="ribbon_opacity_title">隱藏式滑動捷徑顏色填滿度</string>
+    <string name="timeout_spinner_title">隱藏式滑動捷徑逾時值</string>
+    <string name="ribbon_drag_handle_width_title">手勢觸發區寬度</string>
+    <string name="ribbon_drag_handle_height_title">手勢觸發區高度</string>
+    <string name="ribbon_insert">新增按鍵</string>
+    <string name="ribbon_handle_location_title">手勢觸發區位置</string>
+    <string name="ribbon_icon_location_title">圖示捷徑排序</string>
+    <string name="center">置中</string>
+    <string name="top">上半部</string>
+    <string name="bottom">下半部</string>
+
+    <string name="menu_ribbon_rearrange">重置彩帶捷徑</string>
+    <string name="ribbon_dialog_arrange_title">布局</string>
+    <string name="ribbon_icon_vibrate_title">點擊觸動回饋</string>
+    <string name="ribbon_icon_space_title">橫向圖示間距</string>
+    <string name="ribbon_icon_space_vertical_title">垂直圖示間距</string>
+
 </resources>

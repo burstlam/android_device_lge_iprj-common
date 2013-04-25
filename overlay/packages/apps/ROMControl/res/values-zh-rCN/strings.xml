@@ -76,8 +76,9 @@
     <string name="title_show_navbar_hide">显示导航栏控制台开关</string>
     <string name="power_menu_expanded_desktop">全屏模式开关</string>
 	<string name="title_show_reboot_keyguard">锁屏中显示重启开关</string>
-    <string name="summary_off_show_reboot_keyguard">锁屏中不会显示重启菜单</string>
-    <string name="summary_on_show_reboot_keyguard">锁屏中显示重启菜单</string>
+    <string name="summary_show_reboot_keyguard">锁屏中显示重启菜单</string>
+    <!--<string name="summary_off_show_reboot_keyguard">锁屏中不会显示重启菜单</string>
+    <string name="summary_on_show_reboot_keyguard">锁屏中显示重启菜单</string>-->
     <string name="title_show_volume_state_toggle">显示音效面板</string>
 
     <!-- Power Saving -->
@@ -162,16 +163,15 @@
     <string name="notification_show_wifi_ssid_title">显示WIFI网路名称</string>
     <string name="notification_show_wifi_ssid_summary">显示目前使用中的WIFI网路名称</string>
 
-
     <!-- LCD Density -->
-    <string name="lcd_density_title">调整 LCD 屏幕分辨率</string>
-    <string name="lcd_density_summary">未知</string>
+    <string name="lcd_density_title">更改系统UI分辨率</string>
+    <string name="lcd_density_summary">设置锁屏/状态栏/引导菜单等系系统用户界面的分辨率</string>
     <string name="current_lcd_density">"当前 LCD 屏幕分辨率: "</string>
     <string name="lcd_density_wizard">设置向导</string>
     <string name="follow_through_title">指南!</string>
     <string name="follow_through_summary">小心按照下列步骤进行.</string>
     <string name="stock_density_title">1. 撤消默认解柝度</string>
-    <string name="stock_density_summary">平板或旧款手机数值为160. 大部份手机使用 240. Galaxy Nexus 使用 320 为默认值.</string>
+    <string name="stock_density_summary">平板或旧款手机分辨率为160. 大部份手机使用 240. Galaxy Nexus 使用 320 为默认值.</string>
     <string name="stock_density_changed_summary">"分辨率设置为: "</string>
     <string name="reboot_title">2. 重启!</string>
     <string name="reboot_summary">再进入此设置页继续下一步!</string>
@@ -181,14 +181,15 @@
     <string name="open_market_title">4. 打开 GOOGLE PLAY 程序并按接受</string>
     <string name="open_market_summary">完成后返回此页.</string>
     <string name="open_market_summary_could_not_open">"不能打开 GOOGLE PLAY 程序，请确认已安装程序后手动点击进入程序."</string>
-    <string name="custom_density_title">5. 设置你喜爱的分辨率!</string>
-    <string name="custom_density_summary">若遇上 GOOGLE PLAY 兼容问题，请返回此页重新设置.</string>
+    <string name="apps_dpi_title2">5.设置全局程序分辨率</string>
+    <string name="custom_density_title">6. 设置您喜爱的系统UI分辨率!</string>
+    <string name="custom_density_summary">若遇上 GOOGLE PLAY 兼容问题，可使用DPI分组功能把GOOGLE PLAY加入原来系统分辨率.</string>
     <string name="custom_density_summary_invalid">"分辨率无效!"</string>
     <string name="custom_density">自定义</string>
     <string name="set_custom_density_title">设置自定义分辨率</string>
     <string name="set_custom_density_set">应用</string>
     <string name="custom_density_dialog_title">"警告!"</string>
-    <string name="custom_density_dialog_summary">"更改分辨率可能引起不能预见的问题，若遇上此情况，请重新进入此页重新由步骤1执行"</string>
+    <string name="custom_density_dialog_summary">"请注意!系统UI分辨率不等于全局程序使用的分辨率.\n另外,更改分辨率可能引起不能预见的问题，若遇上此情况，请利用DPI分组功能把不协调的程序加入原生系统的分辨率组别"</string>
     <string name="custom_density_dialog_button_got">明白!</string>
     <string name="custom_density_dialog_button_reboot">立即重启</string>
 
@@ -593,7 +594,7 @@
     <string name="icon_picker_aokp_icons_title">AOKP图示包</string>
     <string name="icon_picker_gallery_title">图库</string>
 
-    <string name="aokp_icon_picker_aokp">AOKP Now</string>
+<!--    <string name="aokp_icon_picker_aokp">AOKP Now</string>
     <string name="aokp_icon_picker_browser">浏览器</string>
     <string name="aokp_icon_picker_calendar">日历</string>
     <string name="aokp_icon_picker_camera">相机</string>
@@ -634,7 +635,7 @@
     <string name="aokp_4targets">4 目标</string>
     <string name="aokp_5targets">5 目标</string>
     <string name="aokp_6targets">6 目标</string>
-    <string name="aokp_8targets">8 目标</string>
+    <string name="aokp_8targets">8 目标</string>-->
 
     <!-- Weather 天气 -->
     <string name="weather_enable">启用天气</string>
@@ -1053,8 +1054,12 @@
     <string name="brightness_slider_summary">在状态栏上滑动对准屏幕亮度</string>-->
     <string name="status_bar_max_notifications_title">状态栏通知图示最大数</string>
     <string name="status_bar_max_notifications_summary">此修改只对竖屏的平板模式有效</string>
-    <string name="statusbar_hide_title">隐藏状态栏</string>
+<!--    <string name="statusbar_hide_title">隐藏状态栏</string>
     <string name="statusbar_hide_summary">容许完全隐藏状态栏显示</string>
+    <string name="notification_exshade_title">通知栏强制显示</string>
+    <string name="notification_exshade_summary">全屏模式下仍然显示通知栏</string>-->
+    <string name="statusbar_autohide_title">状态栏自动隐藏</string>
+    <string name="statusbar_autohide_summary">没有通知提示时候自动隐藏状态栏</string>
 
     <!-- Status bar background style
     <string name="status_bar_transparency_title">状态栏透明度</string>
@@ -1146,8 +1151,8 @@
     <string name="lockscreen_maximize_widgets_summary">设置后锁屏画面的安全锁(口令,图形及PIN)要点击解锁图案才会出现</string>
     <string name="lockscreen_use_widget_container_carousel_title">使用旋转动画</string>
     <string name="lockscreen_use_widget_container_carousel_summary">替换小工具页面时使用旋转动画.</string>
-    <string name="lockscreen_longpress_challenge_title">长按解锁图案动作</string>
-    <string name="lockscreen_longpress_challenge_summary">锁屏小工具最大化时,长按解锁图案可直接解锁.</string>
+<!--    <string name="lockscreen_longpress_challenge_title">长按解锁图案动作</string>
+    <string name="lockscreen_longpress_challenge_summary">锁屏小工具最大化时,长按解锁图案可直接解锁.</string>-->
     <string name="lockscreen_camera_widget_title">启用相机小工具</string>
     <string name="lockscreen_camera_widget_summary">锁屏增加相机小工具</string>
 
@@ -1165,7 +1170,7 @@
     <string name="pref_lockscreen_transparent">锁屏透明</string>
 <!--    <string name="lockscreen_seethrough">锁屏透明</string>-->
 
-    <!-- ParanoidAndroid: Lockscreen Shortcuts -->
+    <!-- ParanoidAndroid: Lockscreen Shortcuts
     <string name="ls_shortcuts_title">锁屏捷径</string>
     <string name="icon_picker_type">选择图示包:</string>
     <string name="icon_default">默认</string>
@@ -1178,12 +1183,12 @@
     <string name="lock_screen_shortcuts_summary">检视或更改锁屏捷径</string>
     <string name="lock_screen_shortcuts_add">@string/profile_add_app</string>
     <string name="lock_screen_shortcuts_reset">重置</string>
-    <string name="lock_screen_shortcuts_limit">最多可设定6个捷径!</string>
+    <string name="lock_screen_shortcuts_limit">最多可设定6个捷径!</string> -->
     <!-- Add application dialog box title -->
     <string name="choose_app">选择程序</string>
     <string name="profile_applist_title">程序</string>
 
-    <!-- Lockscreen Targets -->
+    <!-- Lockscreen Targets
     <string name="custom_targets">自定义锁屏目标</string>
     <string name="lockscreen_target_info">将光标拖动到空白捷径上设置新目标</string>
     <string name="lockscreen_target_title">自定义目标</string>
@@ -1238,7 +1243,7 @@
     <string name="lockscreen_shortcuts_icon_picker_sms">信息</string>
     <string name="lockscreen_shortcuts_icon_picker_terminal">终端</string>
     <string name="lockscreen_shortcuts_icon_picker_twitter">Twitter推特</string>
-    <string name="lockscreen_shortcuts_icon_picker_unlock">解锁</string>
+    <string name="lockscreen_shortcuts_icon_picker_unlock">解锁</string> -->
 
     <!-- Pie controls -->
     <string name="pie_controls_title">PIE 面版</string>
@@ -1246,7 +1251,6 @@
     <string name="pie_gravity_title">Pie 触发侧 </string>
     <string name="pie_gravity_summary">选择PIE面版出现位置</string>
     <string name="pie_gravity_top">上</string>
-<!--    <string name="pie_gravity_both">左右两侧</string> -->
     <string name="pie_gravity_bottom">下</string>
     <string name="pie_gravity_left">左</string>
     <string name="pie_gravity_right">右</string>
@@ -1282,8 +1286,9 @@
     <string name="all_color">自设置颜色</string>
     <string name="stock_color">系统默认配色</string>
     <string name="pie_juice_title">电量颜色</string>
+    <!--<string name="pie_button_color_title">按键颜色</string>-->
 
-    <!-- Pie Gap-->
+    <!-- Pie Gap -->
     <string name="pie_gap_title">PIE 按键间距</string>
     <string name="pie_gap_summary">调校各按键之间距离</string>
     <string name="pie_gap_closed">关闭</string>
@@ -1323,7 +1328,8 @@
 -->
 
     <!-- Per Apps UI Mode-->
-    <string name="appsuimode_title">全局UI设定</string>
+    <string name="appsuimode_title">全局UI布局模式</string>
+    <string name="appsuimode_summary">全局套用更改所有程序UI布局,可切换成:手机,平板手机及平板任何一种模式</string>
     <string name="apps_dpi_title">全局DPI解像度设定</string>
     <string name="apps_dpi_summary">目前:</string>
     <string name="apps_dpi_custom_title">指定:</string>
@@ -1377,11 +1383,15 @@
     <!--Expanded Desktop Enhancement: Status Bar Switch -->
     <string name="expanded_desktop_status_bar_state">全屏模式状态栏调校</string>
     <string name="summary_expanded_desktop">%1$s</string>
-    <string name="expanded_desktop_summary_status_bar">显示状态栏</string>
+    <string name="expanded_desktop_summary">更改全屏模式模式</string>
+    <string name="expanded_desktop_disabled">关闭</string>
+    <string name="expanded_desktop_only_nav_bar">隐藏导航栏</string>
+    <string name="expanded_desktop_only_status_bar">隐藏状态栏</string>
+    <string name="expanded_desktop_both_hidden">全部隐藏</string>
+<!--    <string name="expanded_desktop_summary_status_bar">显示状态栏</string>
     <string name="expanded_desktop_summary_no_status_bar">隐藏状态栏</string>
-    <!-- <string name="expanded_desktop_disabled">关闭</string> -->
     <string name="expanded_desktop_staus_bar">显示状态栏</string>
-    <string name="expanded_desktop_no_staus_bar">隐藏状态栏</string>
+    <string name="expanded_desktop_no_staus_bar">隐藏状态栏</string>-->
 
   <!-- CRT_ANIMATION-->
     <string name="system_power_crt_screen_off_title">CRT 关屏动画</string>
@@ -1588,4 +1598,152 @@
     <string name="show_network_speed_title">显示当前网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
     <string name="status_bar_traffic_color_title">自定义网速显示颜色</string>
+
+    <!-- Quick/Pie Control
+    <string name="pie_control_title">PIE面版</string>
+    <string name="pie_control_dialog_title">PIE虚拟键</string>
+    <string name="pie_control_always">不设限制启用</string>
+    <string name="pie_control_expanded">只有全屏模式时自动启用</string>
+    <string name="pie_control_disabled">关闭</string>
+    <string name="pie_control_size">面板尺寸</string>
+    <string name="pie_control_trigger_positions">触发侧设置</string>
+    <string name="pie_control_trigger_left">屏幕左侧边框</string>
+    <string name="pie_control_trigger_bottom">屏幕底部边框</string>
+    <string name="pie_control_trigger_right">屏幕右侧边框</string>
+    <string name="pie_control_trigger_top">屏幕顶部边框</string>
+    <string name="pie_control_trigger_top_summary">顶部只会显示虚拟键,不会显示信息面板</string>
+    <string name="pie_button_style">按键式样</string>
+    <string name="pie_button_color_title">按键颜色</string>
+    <string name="pie_button_alpha_title">按键透明度</string>
+    <string name="pie_button_outline_color_title">按键框线颜色</string>
+    <string name="pie_button_pressed_color_title">按下按键颜色</string>
+    <string name="pie_button_long_pressed_color_title">长按按键颜色</string>
+    <string name="pie_button_pressed_alpha_title">按下按键颜色透明度</string>
+    <string name="pie_icon_style">按键图示风格</string>
+    <string name="pie_icon_color_title">按键图示颜色</string>
+    <string name="pie_icon_color_mode_title">按键色彩模式</string>
+    <string name="pie_icon_color_mode_dialog_title">彩色化</string>
+    <string name="pie_icon_color_mode_summary">改变按键着色</string>
+    <string name="pie_icon_color_mode_all_icons">全部图示</string>
+    <string name="pie_icon_color_mode_system_icons">系统图示</string>
+    <string name="pie_icon_color_mode_system_custom_icons">所有系统及自定图示</string>
+    <string name="pie_trigger_size_title">触发本地宽度</string>
+    <string name="pie_trigger">触发本地设置</string>
+    <string name="pie_trigger_note_title">注意事项</string>
+    <string name="pie_trigger_note_summary">为避色跟状态栏及导航栏互相干扰, 触发本地会根据重叠的边缘范围自动调整</string>
+    <string name="pie_disable_ime_triggers_title">使用键盘时关闭或调节触发本地</string>
+    <string name="pie_disable_ime_triggers_summary">使用软键盘时,自动关闭或调节键盘位置的触发本地</string>
+    <string name="pie_background_color_title">后台颜色</string>
+    <string name="pie_snap_color_title">捕捉点颜色</string>
+    <string name="pie_text_color_title">文字颜色</string>
+    <string name="pie_background_alpha_title">后台透明度</string>
+    <string name="pie_style">式样和尺寸</string>
+    <string name="pie_style_title">式样</string>
+    <string name="pie_dimens_title">尺寸</string>
+    <string name="pie_default">默认</string>
+    <string name="pie_additional_options">其它选项</string>
+    <string name="pie_show_snap_title">显示捕捉点</string>
+    <string name="pie_show_snap_summary">显示捕捉点以便自由拖动转换</string>
+    <string name="pie_show_text_title">显示状态信息面板</string>
+    <string name="pie_show_text_summary">显示信号,日期及时间状态</string>
+    <string name="pie_disable_statusbar_info_title">隐藏状态信息面板</string>
+    <string name="pie_disable_statusbar_info_summary">隐藏重复的状态栏信息</string>
+    <string name="pie_show_background_title">显示后台</string>
+    <string name="pie_show_background_summary">显示PIE按键后台</string>
+    <string name="menu_pie_style_reset">重置式样</string>
+    <string name="menu_pie_button_style_reset">重置按键式样</string>
+    <string name="menu_pie_button_reset">重置按键</string>
+    <string name="pie_qty_title">按键数目</string>
+    <string name="pie_qty_summary">改变此项将重置所有按键设置</string>
+    <string name="pie_action_title">%1$s 按键动作 &amp; 图示</string>
+    <string name="pie_longpress_title"> %1$s 按键长按动作</string>
+    <string name="pie_enable_long">启用按键长按设置</string>
+    <string name="pie_button">按键布局设置</string>
+    <string name="pie_button_cat">按键布局设置</string>
+    <string name="pie_action_custom_app">自定程序</string>
+    <string name="pie_action_home">主页</string>
+    <string name="pie_action_back">返回</string>
+    <string name="pie_action_recents">最近任务</string>
+    <string name="pie_action_lastapp">上一个任务</string>
+    <string name="pie_action_search">寻找</string>
+    <string name="pie_action_screenshot">截屏</string>
+    <string name="pie_action_menu">菜单</string>
+    <string name="pie_action_ime">切换输入法</string>
+    <string name="pie_action_kill">清除任务</string>
+    <string name="pie_action_power">关闭屏幕</string>
+    <string name="pie_action_notifications">通知栏</string>
+    <string name="pie_action_none">空</string>
+    <string name="color_default">默认</string> -->
+
+
+    <!-- AOKP Lockscreen-->
+    <string name="ls_shortcuts_title">锁屏捷径</string>
+    <string name="lockscreen_targets_title">锁屏目标</string>
+    <string name="lockscreen_targets_summary">锁屏目标概览…</string>
+    <string name="lockscreen_target_longpress_text">长按功能</string>
+    <string name="lockscreen_target_longpress_summary">为锁屏捷径长按功能</string>
+    <string name="lockscreen_camera">相机</string>
+    <string name="lockscreen_unlock">解锁</string>
+    <string name="save_error">不能存储设置, 最低限度需要设置一个解锁目标!</string>
+    <string name="icon_picker_pack_title">图示包</string>
+    <string name="lockscreen_target_empty">空</string>
+    <string name="profile_reset_title">重置</string>
+    <string name="wifi_save">存储</string>
+    <string name="lockscreen_target_info">将光标拖动到空白捷径上设置新目标</string>
+    <string name="lockscreen_options_info">点击文字显示简单说明</string>
+    <string name="lockscreen_target_reset">撤消锁屏捷径选择</string>
+    <string name="lockscreen_target_reset_title">重置</string>
+    <string name="lockscreen_target_reset_message">删除所有存储选择并撤消到系统缺省?</string>
+    <string name="lockscreen_target_save">存储锁屏捷径选择</string>
+    <string name="lockscreen_target_save_error_title">错误！不能存储</string>
+    <string name="lockscreen_target_save_error_msg">您必须至少设置一个能解除锁屏状态的捷径!</string>
+    <string name="lockscreen_target_edit_title">编辑目标及图示</string>
+    <string name="lockscreen_target_edit_msg">选择及更改自定义程序或活动并联系引导图示</string>
+
+    <!-- AOKP Ribbon-->
+    <string name="title_ribbon">彩带捷径</string> 
+    <string name="ribbon_settings_title">彩带捷径选项</string>
+    <string name="menu_ribbon_reset">重置</string>
+    <string name="aokp_ribbon">隐藏式捷径</string>
+    <string name="nav_widgets">导航栏小工具</string>
+    
+   <!-- Ribbon -->
+    <string name="ribbon_instructions">点击图示新增或删除动作</string>
+    <string name="ribbon_targets_cat">彩带捷径条设定</string>
+    <string name="enable_ribbon_text_title">显示捷径名称</string>
+    <string name="enable_ribbon_vibrate_title">触发区振动回馈</string>
+    <string name="enable_ribbon_text_summary">图示下方显示捷径名称</string>
+    <string name="ribbon_icon_size_title">捷径图示大小</string>
+    <string name="ribbon_icon_size_summary">设定捷径图示的大小</string>
+    <string name="ribbon_lockscreen">锁屏捷径</string>
+    <string name="ribbon_notifications">通知栏捷径</string>
+    <string name="ribbon_quicksettings">快捷开关(磁贴模式)捷径</string>
+    <string name="ribbon_swipe">隐藏式滑动捷径</string>
+    <string name="clone_title">选定将要复制捷径</string>
+    <string name="icon_size_normal">正常</string>
+    <string name="icon_size_20">中等</string>
+    <string name="icon_size_15">小</string>
+    <string name="ribbon_left_enable_title">左侧滑动</string>
+    <string name="ribbon_right_enable_title">右侧滑动</string>
+    <string name="ribbon_bottom_enable_title">下方滑动</string>
+    <string name="ribbon_bottom_warning_title">使用导航栏无法使用下方滑动.</string>
+    <string name="ribbon_color_title">滑动捷径着色</string>
+    <string name="text_color_title">捷径文字颜色</string>
+    <string name="ribbon_opacity_title">隐藏式滑动捷径颜色填满度</string>
+    <string name="timeout_spinner_title">隐藏式滑动捷径逾时值</string>
+    <string name="ribbon_drag_handle_width_title">手势触发区宽度</string>
+    <string name="ribbon_drag_handle_height_title">手势触发区高度</string>
+    <string name="ribbon_insert">新增按键</string>
+    <string name="ribbon_handle_location_title">手势触发区位置</string>
+    <string name="ribbon_icon_location_title">图示捷径排序</string>
+    <string name="center">置中</string>
+    <string name="top">上半部</string>
+    <string name="bottom">下半部</string>
+
+    <string name="menu_ribbon_rearrange">重置彩带捷径</string>
+    <string name="ribbon_dialog_arrange_title">布局</string>
+    <string name="ribbon_icon_vibrate_title">点击触动回馈</string>
+    <string name="ribbon_icon_space_title">横向图示间距</string>
+    <string name="ribbon_icon_space_vertical_title">垂直图示间距</string>
+
 </resources>

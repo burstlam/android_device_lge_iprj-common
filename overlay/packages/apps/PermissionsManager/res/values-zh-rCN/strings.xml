@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The ChameleonOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">授权管理</string>
+    <string name="action_settings">设定</string>
+    <string name="title_settings">设定</string>
+    <string name="title_apps">程序</string>
+    <string name="title_activity_manager">管理活动</string>
+    <string name="pref_enable_management_title">启动管理</string>
+    <string name="pref_enable_management_summary_on">授权管理已启动</string>
+    <string name="pref_enable_management_summary_off">授权管理已关闭</string>
+    <string name="tab_settings">设定</string>
+    <string name="tab_apps">程序</string>
+
+    <string name="switch_label">管理</string>
+
+    <string name="dlg_perm_info_dismiss">注销</string>
+
+    <string name="dlg_disclaimer_title">Adverse side effects</string>
+    <string name="dlg_disclaimer_message">当注销权限我们请你记住这一点: 撤消权限有机会导致应用程序崩溃。\n\n若变更权限后软件无法正常运作,请先复原授权设定才决定是否软件故障或设定不当.\n\n请对这个动作负责.</string>
+    <string name="dlg_disclaimer_agree">我明白</string>
+    <string name="dlg_disclaimer_tldr">tl;dr</string>
+    <string name="dlg_tldr_message">你注销权限能预期软件不正常操作或会强制关闭.\n\n请小心决定.</string>
+    <string name="dlg_tldr_disagree">退出</string>
+
+</resources>

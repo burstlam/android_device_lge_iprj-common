@@ -100,23 +100,40 @@
     <string name="device_hostname">设备名称</string>
 
     <!-- Automatic brightness customization -->
-    <string name="light_sensor_current_value">光线感应器取值: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="light_sensor_current_value">光线传感器取值: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">自动亮度水平调节</string>
-    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> lux</string>
-    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
     <string name="auto_brightness_adjust_button">调节</string>
+    <string name="auto_brightness_close_button">关闭</string>
     <string name="auto_brightness_reset_button">重置</string>
     <string name="auto_brightness_lux_dialog_title">亮度水平设置</string>
-    <string name="auto_brightness_split_dialog_title">中分亮度水平</string>
-    <string name="auto_brightness_reset_dialog_title">还原系统默认值?</string>
+    <string name="auto_brightness_split_dialog_title">新增亮度水平</string>
+    <string name="auto_brightness_level_dialog_title">设置亮度水平</string>
+    <string name="auto_brightness_lux">环境亮度 (lux)</string>
+    <string name="auto_brightness_reset_dialog_title">撤消系统默认值?</string>
     <string name="auto_brightness_reset_confirmation">所有亮度水平将会重置成系统默认值.</string>
-    <string name="auto_brightness_start_lux">初始 (lux)</string>
-    <string name="auto_brightness_end_lux">结束 (lux)</string>
-    <string name="auto_brightness_split_lux_format">中分位置 (于 <xliff:g id="min">%1$d</xliff:g> 及 <xliff:g id="max">%2$d</xliff:g> lux 之间)</string>
+
+    <string name="auto_brightness_split_lux_format">新增水平 (于 <xliff:g id="min">%1$d</xliff:g> 及 <xliff:g id="max">%2$d</xliff:g> lux 之间)</string>
     <string name="auto_brightness_level_options">亮度水平</string>
-    <string name="auto_brightness_menu_edit_lux">编辑光线感应器取值</string>
-    <string name="auto_brightness_menu_split">中分</string>
-    <string name="auto_brightness_menu_remove">移除</string>
+    <string name="auto_brightness_menu_edit_lux">编辑光线传感器取值</string>
+    <string name="auto_brightness_menu_split">新增水平</string>
+    <string name="auto_brightness_menu_remove">删除</string>
+    <string name="auto_brightness_preview">预览</string>
+    <string name="auto_brightness_preview_dialog_title">亮度曲线预览</string>
+    <string name="auto_brightness_help_dialog_title">说明</string>
+    <string name="auto_brightness_help_text"><b>亮度是如何计算出来的？</b>
+\n\n
+通过对<i>控制点/抽样点</i> 执行<i>三次抽样插值</i>计算出亮度曲线. 这种方法有别于 \'一篮子\' 计算方法,把屏幕亮度在特定周围环境的亮度保持下来.
+这样周围环境的亮度轻微改变不会大幅度改变屏幕亮度,但是这种方式不便于系统计算环境亮度带来控制点的具体形响.
+\n为此亮度曲线预览可以带来一点方便. 请注意预览只是以<i>对数</i>比例显示,突显出所有控制点数据.
+当改用直线比例显示将很难显示低亮环境的控制点数据.
+\n\n
+<b>怎样编辑编辑光线传感器取值?</b>
+\n\n
+亮度水平对应亮度曲线每个 <i>控制点</i>. 要编辑亮度可使用滑动条改变量值,
+屏幕亮度会根据滑动改变 .\n
+长按亮度栏后点选\'调节\'可以同时编辑环境亮度的控制点抽样值并手动输入调节的屏幕亮度.
+点选 \'新增水平\' 复制一个亮度水平栏. \'删除\' 则可删除一行亮度数值.
+    </string>
 
     <string name="wifi_setting_countrycode_title">设置Wi-Fi 国家/地区代码</string>
     <string name="wifi_setting_countrycode_summary">Wi-Fi所属地域置标</string>
@@ -404,7 +421,7 @@
     <string name="swap_volume_buttons_title">音量键互换</string>
     <string name="swap_volume_buttons_summary">屏幕横向时互换音量键功能</string>
 
-    <!-- Whether to display IME switcher notifcation -->
+    <!-- Whether to display IME switcher notifcation-->
     <string name="ime_switcher_notify">输入法图示</string>
     <string name="ime_switcher_notify_summary">于状态栏显示轮入法图示</string>
 
@@ -426,6 +443,16 @@
     <string name="power_notifications_enable_title">使用电源连接提示音</string>
     <!-- Sound settings, power notifications ringtone selection, preference label -->
     <string name="power_notifications_ringtone_title">通知音</string>
+    <string name="power_notifications_vibrate_title">振动</string>
     <!-- Sound settings, power notifications label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">静音</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">开机媒体扫描</string>
+    <string name="media_scanner_on_boot_enabled">执行扫描</string>
+    <string name="media_scanner_on_boot_ask">提示确认</string>
+    <string name="media_scanner_on_boot_disabled">不执行扫描</string>
+
+    <!-- Permissions Management -->
+    <string name="permissions_settings_title">授权管理</string>
 </resources>
